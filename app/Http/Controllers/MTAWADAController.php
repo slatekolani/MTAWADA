@@ -30,10 +30,7 @@ class MTAWADAController extends Controller
     {
         return view('Pages.impact');
     }
-    public function news()
-    {
-        return view('Pages.news');
-    }
+
     public function gallery()
     {
         return view('Pages.gallery');
@@ -41,5 +38,13 @@ class MTAWADAController extends Controller
     public function contact()
     {
         return view('Pages.contact');
+    }
+    public function programs()
+    {
+        return view('Pages.programs');
+    }
+    public function donate()
+    {
+        return view('Pages.donate');
     }
 }

@@ -6,7 +6,7 @@
 <!-- Hero Section -->
 <section class="mission-hero" style="margin-top: 90px; position: relative; overflow: hidden;">
     <div class="hero-bg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
-        <div class="bg-overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(rgba(46, 125, 50, 0.7), rgba(76, 175, 80, 0.6)); z-index: 1;"></div>
+        <div class="bg-overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(rgba(46, 125, 50, 0.4), rgba(76, 175, 80, 0.3)); z-index: 1;"></div>
         <div class="bg-image" style="position: absolute; top: 0; left: 0; width: 100%; height: 160%; background-image: url('/images/Education2.jpg'); background-size: cover; background-position: center; z-index: 0; animation: zoomEffect 20s infinite alternate;"></div>
     </div>
 
@@ -293,7 +293,7 @@
                     </p>
                     <div class="activity-stats" style="display: flex; gap: 20px; flex-wrap: wrap;">
                         <span style="display: flex; align-items: center; gap: 8px; color: #2E7D32; font-size: 14px;">
-                            <i class="fas fa-users"></i> 850+ Members
+                            <i class="fas fa-users"></i> 1359+ Members
                         </span>
                         <span style="display: flex; align-items: center; gap: 8px; color: #2E7D32; font-size: 14px;">
                             <i class="fas fa-map-marker-alt"></i> 5 Municipalities

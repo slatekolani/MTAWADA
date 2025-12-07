@@ -6,7 +6,7 @@
 <!-- Hero Section -->
 <section class="values-hero" style="margin-top: 90px; position: relative; overflow: hidden;">
     <div class="hero-bg" style="position: absolute; top: 0; left: 0; width: 100%; height: 70%;">
-        <div class="bg-overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 150%; background: linear-gradient(rgba(46, 125, 50, 0.7), rgba(76, 175, 80, 0.6)); z-index: 1;"></div>
+        <div class="bg-overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 150%; background: linear-gradient(rgba(46, 125, 50, 0.4), rgba(76, 175, 80, 0.3)); z-index: 1;"></div>
         <div class="bg-image" style="position: absolute; top: 0; left: 0; width: 100%; height: 180%; background-image: url('/images/Speaking1.jpg'); background-size: cover; background-position: center; z-index: 0; filter: brightness(0.7);"></div>
     </div>
 
@@ -27,13 +27,13 @@
                     <div style="font-size: 36px; font-weight: 700; color: #FFC107; margin-bottom: 5px;">5</div>
                     <div style="font-size: 14px; color: rgba(255, 255, 255, 0.8);">Core Values</div>
                 </div>
-                <div class="stat" style="text-align: center;">
+                {{-- <div class="stat" style="text-align: center;">
                     <div style="font-size: 36px; font-weight: 700; color: #FFC107; margin-bottom: 5px;">850+</div>
                     <div style="font-size: 14px; color: rgba(255, 255, 255, 0.8);">Lives Guided</div>
                 </div>
                 <div class="stat" style="text-align: center;">
                     <div style="font-size: 36px; font-weight: 700; color: #FFC107; margin-bottom: 5px;">1</div>
-                    <div style="font-size: 14px; color: rgba(255, 255, 255, 0.8);">United Vision</div>
+                    <div style="font-size: 14px; color: rgba(255, 255, 255, 0.8);">United Vision</div> --}}
                 </div>
             </div>
         </div>

@@ -6,7 +6,7 @@
 <!-- Hero Section -->
 <section class="impact-hero" style="margin-top: 90px; position: relative; overflow: hidden; background: linear-gradient(135deg, #2E7D32 0%, #4CAF50 100%);">
     <div class="hero-bg" style="position: absolute; top: 0; left: 0; width: 100%; height: 250%;">
-        <div class="bg-overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(rgba(46, 125, 50, 0.7), rgba(76, 175, 80, 0.6)); z-index: 1;"></div>
+        <div class="bg-overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(rgba(46, 125, 50, 0.4), rgba(76, 175, 80, 0.3)); z-index: 1;"></div>
         <div class="bg-image" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-image: url('/images/Education3.jpg'); background-size: cover; background-position: center; z-index: 0;"></div>
 
         <!-- Animated impact elements -->
@@ -62,20 +62,16 @@
                 <div style="width: 45%; padding-right: 60px;">
                     <div class="timeline-content" style="background: #F8FAFC; padding: 30px; border-radius: 15px; box-shadow: 0 10px 30px rgba(46, 125, 50, 0.1); border-left: 4px solid #2E7D32;">
                         <div class="timeline-date" style="color: #2E7D32; font-weight: 700; margin-bottom: 15px; font-size: 18px;">
-                            <i class="fas fa-calendar-alt" style="margin-right: 10px;"></i> 2018 - Foundation
+                            <i class="fas fa-calendar-alt" style="margin-right: 10px;"></i> 2023 - Foundation
                         </div>
                         <h3 style="color: #2E7D32; margin-bottom: 15px; font-size: 22px;">Building the Movement</h3>
                         <p style="color: #666666; line-height: 1.6; margin-bottom: 20px;">
-                            Started with 50 waste pickers organizing for better working conditions and recognition in Dar es Salaam.
+                            Established with 10 founding waste pickers from Ubungo and Kinondoni Municipalities.
                         </p>
                         <div class="impact-stats" style="display: flex; gap: 20px;">
                             <div style="text-align: center;">
-                                <div style="font-size: 20px; font-weight: 700; color: #2E7D32;">50</div>
+                                <div style="font-size: 20px; font-weight: 700; color: #2E7D32;">10</div>
                                 <div style="font-size: 12px; color: #666666;">Founding Members</div>
-                            </div>
-                            <div style="text-align: center;">
-                                <div style="font-size: 20px; font-weight: 700; color: #2E7D32;">3</div>
-                                <div style="font-size: 12px; color: #666666;">Communities</div>
                             </div>
                         </div>
                     </div>
@@ -88,21 +84,18 @@
                 <div style="width: 45%; padding-left: 60px;">
                     <div class="timeline-content" style="background: #F8FAFC; padding: 30px; border-radius: 15px; box-shadow: 0 10px 30px rgba(76, 175, 80, 0.1); border-left: 4px solid #4CAF50;">
                         <div class="timeline-date" style="color: #4CAF50; font-weight: 700; margin-bottom: 15px; font-size: 18px;">
-                            <i class="fas fa-calendar-alt" style="margin-right: 10px;"></i> 2020 - Growth Phase
+                            <i class="fas fa-calendar-alt" style="margin-right: 10px;"></i> 2024 - Growth Phase
                         </div>
                         <h3 style="color: #4CAF50; margin-bottom: 15px; font-size: 22px;">Expanding Reach</h3>
                         <p style="color: #666666; line-height: 1.6; margin-bottom: 20px;">
-                            Expanded to 8 communities with 300+ members. Launched first formal training programs in waste management.
+                            Expanded to 1359+ waste pickers in 2024 and 2025, constituting all waste pickers accross the five districts of Dar es salaam.
                         </p>
                         <div class="impact-stats" style="display: flex; gap: 20px;">
                             <div style="text-align: center;">
-                                <div style="font-size: 20px; font-weight: 700; color: #4CAF50;">300+</div>
+                                <div style="font-size: 20px; font-weight: 700; color: #4CAF50;">1359+</div>
                                 <div style="font-size: 12px; color: #666666;">Members</div>
                             </div>
-                            <div style="text-align: center;">
-                                <div style="font-size: 20px; font-weight: 700; color: #4CAF50;">8</div>
-                                <div style="font-size: 12px; color: #666666;">Communities</div>
-                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -114,21 +107,18 @@
                 <div style="width: 45%; padding-right: 60px;">
                     <div class="timeline-content" style="background: #F8FAFC; padding: 30px; border-radius: 15px; box-shadow: 0 10px 30px rgba(129, 199, 132, 0.1); border-left: 4px solid #81C784;">
                         <div class="timeline-date" style="color: #388E3C; font-weight: 700; margin-bottom: 15px; font-size: 18px;">
-                            <i class="fas fa-calendar-alt" style="margin-right: 10px;"></i> 2022 - Recognition
+                            <i class="fas fa-calendar-alt" style="margin-right: 10px;"></i> 2024
                         </div>
                         <h3 style="color: #388E3C; margin-bottom: 15px; font-size: 22px;">Policy Influence</h3>
                         <p style="color: #666666; line-height: 1.6; margin-bottom: 20px;">
-                            Gained formal recognition from Dar es Salaam City Council. Influenced 3 major waste management policies.
+                            One policy initiative (Extended Producer Responsibility) currecntly under review by the vice president's office..
                         </p>
                         <div class="impact-stats" style="display: flex; gap: 20px;">
                             <div style="text-align: center;">
-                                <div style="font-size: 20px; font-weight: 700; color: #388E3C;">3</div>
+                                <div style="font-size: 20px; font-weight: 700; color: #388E3C;">1</div>
                                 <div style="font-size: 12px; color: #666666;">Policies Influenced</div>
                             </div>
-                            <div style="text-align: center;">
-                                <div style="font-size: 20px; font-weight: 700; color: #388E3C;">12</div>
-                                <div style="font-size: 12px; color: #666666;">Wards Covered</div>
-                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -140,20 +130,16 @@
                 <div style="width: 45%; padding-left: 60px;">
                     <div class="timeline-content" style="background: #F8FAFC; padding: 30px; border-radius: 15px; box-shadow: 0 10px 30px rgba(255, 152, 0, 0.1); border-left: 4px solid #FF9800;">
                         <div class="timeline-date" style="color: #FF9800; font-weight: 700; margin-bottom: 15px; font-size: 18px;">
-                            <i class="fas fa-calendar-alt" style="margin-right: 10px;"></i> 2024 - Today
+                            <i class="fas fa-calendar-alt" style="margin-right: 10px;"></i> 2024 - Present
                         </div>
                         <h3 style="color: #FF9800; margin-bottom: 15px; font-size: 22px;">Sustainable Transformation</h3>
                         <p style="color: #666666; line-height: 1.6; margin-bottom: 20px;">
-                            850+ members across 15 communities. Leading sustainable waste management innovation in Tanzania.
+                            Sustainable transformation with 1359+ members across the five districts of Dar es Salaam.
                         </p>
                         <div class="impact-stats" style="display: flex; gap: 20px;">
                             <div style="text-align: center;">
-                                <div style="font-size: 20px; font-weight: 700; color: #FF9800;">850+</div>
+                                <div style="font-size: 20px; font-weight: 700; color: #FF9800;">1359+</div>
                                 <div style="font-size: 12px; color: #666666;">Members</div>
-                            </div>
-                            <div style="text-align: center;">
-                                <div style="font-size: 20px; font-weight: 700; color: #FF9800;">15</div>
-                                <div style="font-size: 12px; color: #666666;">Communities</div>
                             </div>
                         </div>
                     </div>
@@ -180,32 +166,18 @@
                 <div class="metric-icon" style="font-size: 40px; color: #FFC107; margin-bottom: 20px;">
                     <i class="fas fa-user-friends"></i>
                 </div>
-                <div class="metric-number" style="font-size: 48px; font-weight: 800; color: white; margin-bottom: 10px;">850+</div>
+                <div class="metric-number" style="font-size: 48px; font-weight: 800; color: white; margin-bottom: 10px;">1359+</div>
                 <div class="metric-label" style="color: rgba(255, 255, 255, 0.9); font-size: 16px;">Waste Pickers Empowered</div>
             </div>
 
-            <div class="metric-box" style="background: rgba(255, 255, 255, 0.15); backdrop-filter: blur(10px); border-radius: 15px; padding: 40px 30px; text-align: center; border: 1px solid rgba(255, 255, 255, 0.2);">
-                <div class="metric-icon" style="font-size: 40px; color: #FFC107; margin-bottom: 20px;">
-                    <i class="fas fa-chart-line"></i>
-                </div>
-                <div class="metric-number" style="font-size: 48px; font-weight: 800; color: white; margin-bottom: 10px;">45%</div>
-                <div class="metric-label" style="color: rgba(255, 255, 255, 0.9); font-size: 16px;">Average Income Increase</div>
-            </div>
+
 
             <div class="metric-box" style="background: rgba(255, 255, 255, 0.15); backdrop-filter: blur(10px); border-radius: 15px; padding: 40px 30px; text-align: center; border: 1px solid rgba(255, 255, 255, 0.2);">
                 <div class="metric-icon" style="font-size: 40px; color: #FFC107; margin-bottom: 20px;">
                     <i class="fas fa-recycle"></i>
                 </div>
-                <div class="metric-number" style="font-size: 48px; font-weight: 800; color: white; margin-bottom: 10px;">3,500+</div>
+                <div class="metric-number" style="font-size: 48px; font-weight: 800; color: white; margin-bottom: 10px;">10800+</div>
                 <div class="metric-label" style="color: rgba(255, 255, 255, 0.9); font-size: 16px;">Tons Recycled Annually</div>
-            </div>
-
-            <div class="metric-box" style="background: rgba(255, 255, 255, 0.15); backdrop-filter: blur(10px); border-radius: 15px; padding: 40px 30px; text-align: center; border: 1px solid rgba(255, 255, 255, 0.2);">
-                <div class="metric-icon" style="font-size: 40px; color: #FFC107; margin-bottom: 20px;">
-                    <i class="fas fa-graduation-cap"></i>
-                </div>
-                <div class="metric-number" style="font-size: 48px; font-weight: 800; color: white; margin-bottom: 10px;">650+</div>
-                <div class="metric-label" style="color: rgba(255, 255, 255, 0.9); font-size: 16px;">Trained in Best Practices</div>
             </div>
         </div>
     </div>

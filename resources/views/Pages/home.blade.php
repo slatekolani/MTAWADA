@@ -75,9 +75,8 @@
         <div class="stats-grid">
             <div class="stat-card fade-in">
                 <div class="stat-icon">👥</div>
-                <div class="stat-number" data-count="850">0</div>
+                <div class="stat-number" data-count="1359">0</div>
                 <div class="stat-label">Waste Pickers United</div>
-                <div class="stat-trend">+45% since 2024</div>
             </div>
 
             <div class="stat-card fade-in">
@@ -89,7 +88,7 @@
 
             <div class="stat-card fade-in">
                 <div class="stat-icon">♻️</div>
-                <div class="stat-number" data-count="1250">0</div>
+                <div class="stat-number" data-count="900">0</div>
                 <div class="stat-label">Tons of Waste Diverted Monthly</div>
                 <div class="stat-trend">From landfills & waterways</div>
             </div>
@@ -279,15 +278,13 @@
             <h2 class="section-title" >Ready to Make a Difference?</h2>
             <div class="section-divider" ></div>
             <p class="section-subtitle" style="max-width: 600px;">
-                Join over 850 waste pickers fighting for recognition, rights, and environmental sustainability in Dar es Salaam.
+                Join over 1359 waste pickers fighting for recognition, rights, and environmental sustainability in Dar es Salaam.
             </p>
         </div>
 
         <div style="text-align: center; margin-top: 50px;">
             <div class="hero-buttons">
-                <a href="{{route('mtawada.contact')}}" class="btn-primary" style=" color: var(--dignity-orange);">
-                    <i class="fas fa-user-plus"></i> Become a Member
-                </a>
+               
                 <a href="{{route('mtawada.contact')}}" class="btn-secondary" style=" color: var(--dignity-orange);">
                     <i class="fas fa-envelope"></i> Contact Us Today
                 </a>
@@ -295,7 +292,7 @@
 
             <p style="color: var(--dignity-orange); margin-top: 30px; font-size: 14px;">
                 <i class="fas fa-phone"></i> Call us: +255 793543206 |
-                <i class="fas fa-envelope"></i> Email: mtawada2024@gmail.com
+                <i class="fas fa-envelope"></i> Email: info@mtawada.or.tz
             </p>
         </div>
     </div>

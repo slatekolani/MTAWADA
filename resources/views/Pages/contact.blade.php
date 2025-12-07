@@ -141,7 +141,7 @@
 
                 <div class="contact-details">
                     <div style="font-size: 16px; color: #666666; line-height: 1.5; margin-bottom: 15px;">
-                      P.O. Box 4390 NHC, Ubungo-Dar es Salaam
+                      P.O. Box 3560 NHC, Ubungo-Dar es Salaam
                     </div>
                     <div style="color: #666666; font-size: 14px;">
                         <i class="fas fa-calendar-alt"></i> By appointment only
@@ -327,7 +327,7 @@
                         <i class="fas fa-map-pin"></i> Address
                     </h4>
                     <p style="color: #666666; line-height: 1.6; margin-bottom: 10px;">
-                       P.O. Box 4390 NHC, Ubungo-Dar es Salaam
+                       P.O. Box 3560 NHC, Ubungo-Dar es Salaam
                     </p>
 
                 </div>

@@ -14,7 +14,7 @@ use App\Http\Controllers\MTAWADAController;
 */
 
 Route::get('/', function () {
-    return view('pages.home');
+    return view('Pages.home');
 });
 
 Route::prefix('mtawada')->group(function () {
@@ -24,7 +24,8 @@ Route::prefix('mtawada')->group(function () {
     Route::get('/history', [App\Http\Controllers\MTAWADAController::class, 'history'])->name('mtawada.history');
     Route::get('/coreValues', [App\Http\Controllers\MTAWADAController::class, 'coreValues'])->name('mtawada.coreValues');
     Route::get('/impact', [App\Http\Controllers\MTAWADAController::class, 'impact'])->name('mtawada.impact');
-    Route::get('/news', [App\Http\Controllers\MTAWADAController::class, 'news'])->name('mtawada.news');
+    Route::get('/donate', [App\Http\Controllers\MTAWADAController::class, 'donate'])->name('mtawada.donate');
     Route::get('/gallery', [App\Http\Controllers\MTAWADAController::class, 'gallery'])->name('mtawada.gallery');
     Route::get('/contact', [App\Http\Controllers\MTAWADAController::class, 'contact'])->name('mtawada.contact');
+    Route::get('/programs', [App\Http\Controllers\MTAWADAController::class, 'programs'])->name('mtawada.programs');
 });

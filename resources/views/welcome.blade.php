@@ -67,22 +67,23 @@
                     </li>
 
                     <!-- Programs Dropdown -->
-                    {{-- <li class="dropdown">
+                   <li class="dropdown">
                         <a href="#" class="nav-link">
                             <i class="fas fa-project-diagram"></i> Programs <i class="fas fa-chevron-down"></i>
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a href="{{route('mtawada.research')}}"><i class="fas fa-search"></i> Research</a></li>
-                            <li><a href="/programs#resource"><i class="fas fa-book"></i> Resource Centre</a></li>
-                            <li><a href="/programs#events"><i class="fas fa-calendar-alt"></i> News & Events</a></li>
+                            <li><a href="{{ route('mtawada.programs') }}#research"><i class="fas fa-search"></i> Research</a></li>
+                            <li><a href="{{ route('mtawada.programs') }}#resource-centre"><i class="fas fa-book"></i> Resource Centre</a></li>
+                            <li><a href="{{ route('mtawada.programs') }}#news-events"><i class="fas fa-calendar-alt"></i> News & Events</a></li>
+                            <li><a href="{{ route('mtawada.programs') }}#what-we-do"><i class="fas fa-tasks"></i> What We Do</a></li>
                         </ul>
-                    </li> --}}
+                    </li>
 
                     <li><a href="{{route('mtawada.impact')}}" class="nav-link {{ request()->is('impact') ? 'active' : '' }}">
                         <i class="fas fa-chart-line"></i> Impact
                     </a></li>
-                    <li><a href="{{route('mtawada.news')}}" class="nav-link {{ request()->is('news') ? 'active' : '' }}">
-                        <i class="fas fa-book"></i> News
+                    <li><a href="{{route('mtawada.donate')}}" class="nav-link {{ request()->is('news') ? 'active' : '' }}">
+                        <i class="fas fa-money"></i> Donate
                     </a></li>
                     <li><a href="{{route('mtawada.gallery')}}" class="nav-link {{ request()->is('gallery') ? 'active' : '' }}">
                         <i class="fas fa-images"></i> Gallery
@@ -133,7 +134,7 @@
                         <div class="achievement">
                             <div class="achievement-icon" style="background: rgba(255, 255, 255, 0.2); color: white;">👥</div>
                             <div class="achievement-text">
-                                <span class="achievement-number" style="color: #FFC107;">850+</span>
+                                <span class="achievement-number" style="color: #FFC107;">1359+</span>
                                 <span class="achievement-label" style="color: rgba(255, 255, 255, 0.8);">Members</span>
                             </div>
                         </div>
@@ -164,12 +165,7 @@
                             </a>
                         </li>
 
-                        <li>
-                            <a href="{{route('mtawada.news')}}" class="footer-link" style="color: rgba(255, 255, 255, 0.8);">
-                                <span class="link-icon" style="color: #FFC107;">→</span>
-                                <span>News</span>
-                            </a>
-                        </li>
+                        
                         <li>
                             <a href="{{route('mtawada.impact')}}" class="footer-link" style="color: rgba(255, 255, 255, 0.8);">
                                 <span class="link-icon" style="color: #FFC107;">→</span>
@@ -230,7 +226,7 @@
                             </div>
                             <div class="contact-details">
                                 <span class="contact-label" style="color: rgba(255, 255, 255, 0.8);">Address</span>
-                                <span class="contact-value" style="color: white;">P.O. Box 4390 NHC, Ubungo-Dar es Salaam</span>
+                                <span class="contact-value" style="color: white;">P.O. Box 3560 NHC, Ubungo-Dar es Salaam</span>
                             </div>
                         </div>
                         <div class="contact-item">
@@ -248,7 +244,7 @@
                             </div>
                             <div class="contact-details">
                                 <span class="contact-label" style="color: rgba(255, 255, 255, 0.8);">Email</span>
-                                <a href="mailto:mtawada2024@gmail.com" class="contact-value" style="color: white;">mtawada2024@gmail.com</a>
+                                <a href="mailto:info@mtawada.or.tz" class="contact-value" style="color: white;">info@mtawada.or.tz</a>
                             </div>
                         </div>
                     </div>
@@ -289,13 +285,7 @@
                         <p style="color: white;">&copy; 2025 <strong style="color: #FFC107;">MTAWADA</strong> - Mtandao wa Waokota Taka Rejeshi Dar es Salaam. All rights reserved.</p>
                         <p class="registration" style="color: rgba(255, 255, 255, 0.8);">Registered with the Ministry of Home Affairs of Tanzania under The Societies Act (CAP.337 R.E.2002)</p>
                     </div>
-                    <div class="footer-legal">
-                        <a href="/privacy" class="legal-link" style="color: rgba(255, 255, 255, 0.9);">Privacy Policy</a>
-                        <span class="separator" style="color: rgba(255, 255, 255, 0.6);">•</span>
-                        <a href="/terms" class="legal-link" style="color: rgba(255, 255, 255, 0.9);">Terms of Service</a>
-                        <span class="separator" style="color: rgba(255, 255, 255, 0.6);">•</span>
-                        <a href="/sitemap" class="legal-link" style="color: rgba(255, 255, 255, 0.9);">Sitemap</a>
-                    </div>
+
                 </div>
 
                 <!-- Back to Top -->

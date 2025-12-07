@@ -4,292 +4,406 @@
 
 @section('content')
 
-<section class="gallery-hero">
-    <div class="hero-bg">
-        <div class="bg-overlay"></div>
-        <div class="bg-image"></div>
+<!-- Lightbox Modal -->
+<div class="lightbox-modal" id="lightbox-modal">
+    <div class="lightbox-overlay"></div>
+    <div class="lightbox-container">
+        <button class="lightbox-close" id="lightbox-close">
+            <i class="fas fa-times"></i>
+        </button>
+        <button class="lightbox-nav prev" id="lightbox-prev">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="lightbox-nav next" id="lightbox-next">
+            <i class="fas fa-chevron-right"></i>
+        </button>
 
-        <!-- Decorative Floating Elements -->
-        <div class="floating-icon camera">📸</div>
-        <div class="floating-icon images">🖼️</div>
-        <div class="floating-icon video">🎥</div>
+        <div class="lightbox-content">
+            <div class="lightbox-image-container">
+                <img id="lightbox-image" src="" alt="">
+            </div>
+            <div class="lightbox-info">
+                <h3 id="lightbox-title"></h3>
+                <p id="lightbox-description"></p>
+                <div class="lightbox-meta">
+                    <span class="meta-item">
+                        <i class="fas fa-calendar"></i>
+                        <span id="lightbox-date"></span>
+                    </span>
+                    <span class="meta-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span id="lightbox-location"></span>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section class="gallery-hero" style="margin-top: 90px; position: relative; overflow: hidden;">
+    <div class="hero-bg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+        <div class="bg-overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(rgba(46, 125, 50, 0.6), rgba(76, 175, 80, 0.5)); z-index: 1;"></div>
+        <div class="bg-image" style="position: absolute; top: 0; left: 0; width: 100%; height: 160%; background-image: url('/images/Education4.jpg'); background-size: cover; background-position: center; z-index: 0; animation: zoomEffect 20s infinite alternate;"></div>
     </div>
 
-    <div class="container hero-container">
-        <div class="hero-content">
-            <div class="hero-tag">
-                <i class="fas fa-images"></i> VISUAL STORIES
-            </div>
+    <!-- Floating Elements -->
+    <div class="floating-element" style="position: absolute; top: 20%; left: 15%; font-size: 60px; opacity: 0.15; color: white; animation: float 15s infinite ease-in-out; z-index: 2;">📸</div>
+    <div class="floating-element" style="position: absolute; bottom: 30%; right: 10%; font-size: 50px; opacity: 0.15; color: white; animation: float 20s infinite ease-in-out reverse; z-index: 2;">🖼️</div>
 
-            <h1>
-                Our <span>Visual</span> Journey
+    <div class="container" style="position: relative; z-index: 3; min-height: 500px; display: flex; align-items: center;">
+        <div class="hero-content" style="max-width: 800px; padding: 100px 0;">
+            <h1 style="font-size: 56px; font-weight: 800; color: white; margin-bottom: 20px; line-height: 1.2; text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);">
+                Our <span style="color: #FFC107;">Visual</span> Journey
             </h1>
-
-            <p>
-                Capturing moments of transformation, community,
-                and environmental impact
+            <p style="font-size: 24px; color: rgba(255, 255, 255, 0.95); margin-bottom: 30px; line-height: 1.6;">
+                Capturing moments of transformation, community, and environmental impact
             </p>
         </div>
     </div>
 
     <!-- Scroll Indicator -->
-    <div class="scroll-indicator">
-        <div>EXPLORE GALLERY</div>
-        <i class="fas fa-chevron-down"></i>
+    <div class="scroll-indicator" style="position: absolute; bottom: 30px; left: 50%; transform: translateX(-50%); color: white; z-index: 3; text-align: center;">
+        <div style="font-size: 14px; letter-spacing: 2px; margin-bottom: 10px; opacity: 0.9;">EXPLORE GALLERY</div>
+        <i class="fas fa-chevron-down" style="font-size: 20px; animation: bounce 2s infinite;"></i>
     </div>
 </section>
 
-
-
 <section class="featured-gallery-section">
     <div class="container">
-
         <!-- Section Header -->
         <div class="section-header">
-            <h2>Featured Gallery</h2>
-            <div class="tag">HIGHLIGHTS</div>
-            <p>A curated selection of our most impactful moments and stories</p>
+            <h2>Our Gallery Collection</h2>
+            <div class="tag">MOMENTS THAT MATTER</div>
+            <p>Click on any image to view details about our work and impact</p>
+        </div>
+
+        <!-- Gallery Filter -->
+        <div class="gallery-filter">
+            <button class="filter-btn active" data-filter="all">All Photos</button>
+            <button class="filter-btn" data-filter="community">Community</button>
+            <button class="filter-btn" data-filter="advocacy">Advocacy</button>
+            <button class="filter-btn" data-filter="education">Education</button>
+            <button class="filter-btn" data-filter="environment">Environment</button>
         </div>
 
         <!-- Photo Grid -->
         <div class="photo-grid">
-
-            <!-- Large Photo -->
-            <div class="photo-item large">
-                <div class="photo-card">
+            <!-- Image 1: Community Clean-Up Day -->
+            <div class="photo-item large" data-filter="community">
+                <div class="photo-card"
+                     data-image="/images/Field work.jpg"
+                     data-title="Community Clean-Up Day"
+                     data-description="Waste pickers and community members working together in Ubungo municipality to clean public spaces. This initiative not only improves the environment but also fosters community solidarity and recognition of waste pickers' essential role in urban cleanliness."
+                     data-date="June 15, 2024"
+                     data-location="Ubungo, Dar es Salaam">
                     <img src="/images/Field work.jpg" alt="Community Clean Up" loading="lazy">
                     <div class="photo-overlay">
                         <div class="photo-content">
                             <i class="fas fa-hands-helping photo-icon"></i>
                             <h3 class="photo-title">Community Clean-Up Day</h3>
-                            <p class="photo-desc">Waste pickers and community members working together</p>
-                            <span class="photo-label"><i class="fas fa-camera"></i> Featured</span>
+                            <p class="photo-desc">Waste pickers and community members working together in Ubungo</p>
+                            <div class="photo-tags">
+                                <span class="tag">Community</span>
+                                <span class="tag">Environment</span>
+                            </div>
+                            <div class="photo-cta">
+                                <span>Click to view details</span>
+                                <i class="fas fa-expand-alt"></i>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Small Photo 1 -->
-            <div class="photo-item">
-                <div class="photo-card">
-                    <img src="/images/Scripting.jpg" alt="Sorting Center" loading="lazy">
+            <!-- Image 2: Field Registration Work -->
+            <div class="photo-item" data-filter="advocacy">
+                <div class="photo-card"
+                     data-image="/images/Scripting.jpg"
+                     data-title="Field Registration & Data Collection"
+                     data-description="Our team conducting field registration of waste pickers in Kinondoni municipality. This crucial data helps us advocate for formal recognition and better working conditions. Each registration brings us closer to comprehensive representation of waste pickers' needs."
+                     data-date="May 20, 2024"
+                     data-location="Kinondoni, Dar es Salaam">
+                    <img src="/images/Scripting.jpg" alt="Field Registration Work" loading="lazy">
                     <div class="photo-overlay">
                         <div class="photo-content">
-                            <i class="fas fa-recycle photo-icon"></i>
-                            <h4 class="photo-title">Field Work</h4>
+                            <i class="fas fa-clipboard-list photo-icon"></i>
+                            <h4 class="photo-title">Field Registration Work</h4>
+                            <p class="photo-desc">Data collection for waste picker advocacy</p>
+                            <div class="photo-tags">
+                                <span class="tag">Advocacy</span>
+                                <span class="tag">Research</span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Small Photo 2 -->
-            <div class="photo-item">
-                <div class="photo-card">
-                    <img src="/images/Speaking4.jpg" alt="Women's Cooperative" loading="lazy">
+            <!-- Image 3: Women Waste Pickers Meeting -->
+            <div class="photo-item" data-filter="community">
+                <div class="photo-card"
+                     data-image="/images/Speaking4.jpg"
+                     data-title="Women Waste Pickers Assembly"
+                     data-description="A gathering of women waste pickers in Temeke municipality discussing challenges and solutions. Women comprise over 40% of waste pickers in Dar es Salaam and face unique challenges. These meetings empower them to voice their concerns and contribute to collective decision-making."
+                     data-date="April 10, 2024"
+                     data-location="Temeke, Dar es Salaam">
+                    <img src="/images/Speaking4.jpg" alt="Women Waste Pickers Meeting" loading="lazy">
                     <div class="photo-overlay">
                         <div class="photo-content">
                             <i class="fas fa-users photo-icon"></i>
-                            <h4 class="photo-title">Women's Cooperative</h4>
+                            <h4 class="photo-title">Women's Assembly</h4>
+                            <p class="photo-desc">Women waste pickers discussing their challenges</p>
+                            <div class="photo-tags">
+                                <span class="tag">Community</span>
+                                <span class="tag">Gender</span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Small Photo 3 -->
-            <div class="photo-item">
-                <div class="photo-card">
-                    <img src="/images/Outside gathering.jpg" alt="Training Session" loading="lazy">
+            <!-- Image 4: Community Training Session -->
+            <div class="photo-item" data-filter="education">
+                <div class="photo-card"
+                     data-image="/images/Outside gathering.jpg"
+                     data-title="Safety & Rights Training Session"
+                     data-description="Educational workshop on occupational safety and workers' rights for waste pickers in Ilala municipality. Participants learn about protective equipment, handling hazardous materials, and their legal rights as informal sector workers."
+                     data-date="July 5, 2024"
+                     data-location="Ilala, Dar es Salaam">
+                    <img src="/images/Outside gathering.jpg" alt="Community Training Session" loading="lazy">
                     <div class="photo-overlay">
                         <div class="photo-content">
                             <i class="fas fa-graduation-cap photo-icon"></i>
-                            <h4 class="photo-title">Training Session</h4>
+                            <h4 class="photo-title">Safety Training Session</h4>
+                            <p class="photo-desc">Workshop on occupational safety and rights</p>
+                            <div class="photo-tags">
+                                <span class="tag">Education</span>
+                                <span class="tag">Safety</span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Small Photo 4 -->
-            <div class="photo-item">
-                <div class="photo-card">
-                    <img src="/images/Speaking 3.jpg" alt="Meeting Discussion" loading="lazy">
+            <!-- Image 5: Advocacy Meeting -->
+            <div class="photo-item" data-filter="advocacy">
+                <div class="photo-card"
+                     data-image="/images/Speaking 3.jpg"
+                     data-title="Advocacy Strategy Meeting"
+                     data-description="MTAWADA representatives meeting with local government officials in Kigamboni to discuss waste picker recognition and integration into formal waste management systems. These dialogues are crucial for policy change and sustainable solutions."
+                     data-date="March 22, 2024"
+                     data-location="Kigamboni, Dar es Salaam">
+                    <img src="/images/Speaking 3.jpg" alt="Advocacy Meeting" loading="lazy">
                     <div class="photo-overlay">
                         <div class="photo-content">
-                            <i class="fas fa-award photo-icon"></i>
-                            <h4 class="photo-title">Meeting Discussion</h4>
+                            <i class="fas fa-handshake photo-icon"></i>
+                            <h4 class="photo-title">Advocacy Meeting</h4>
+                            <p class="photo-desc">Dialogues with local government officials</p>
+                            <div class="photo-tags">
+                                <span class="tag">Advocacy</span>
+                                <span class="tag">Policy</span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
 </section>
 
-
 <style>
+/* Lightbox Modal Styles */
+.lightbox-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
 
+.lightbox-modal.active {
+    display: block;
+    opacity: 1;
+    animation: fadeIn 0.3s ease;
+}
 
-.gallery-hero {
-    margin-top: 90px;
-    position: relative;
+.lightbox-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.95);
+    backdrop-filter: blur(10px);
+}
+
+.lightbox-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 1200px;
+    height: 90vh;
+    background: white;
+    border-radius: 20px;
     overflow: hidden;
-    background: linear-gradient(135deg, #2E7D32, #4CAF50);
-    animation: fadeInUp 1s ease-out;
-    min-height: 500px;
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4);
 }
 
-.hero-bg {
+.lightbox-close {
     position: absolute;
-    inset: 0;
-}
-
-.bg-overlay {
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(rgba(46,125,50,0.9), rgba(76,175,80,0.8));
-    z-index: 1;
-}
-
-.bg-image {
-    position: absolute;
-    inset: 0;
-    background-image: url('/images/gallery-hero.jpg');
-    background-size: cover;
-    background-position: center;
-    z-index: 0;
-}
-
-.floating-icon {
-    position: absolute;
-    font-size: 50px;
-    color: #FFC107;
-    opacity: 0.2;
-    animation: float 15s infinite ease-in-out;
-    z-index: 2;
-}
-
-.floating-icon.camera { top: 20%; left: 10%; }
-.floating-icon.images { bottom: 30%; right: 15%; animation-duration: 20s; }
-.floating-icon.video { top: 40%; right: 20%; animation-duration: 18s; }
-
-.hero-container {
-    position: relative;
-    z-index: 3;
+    top: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background: #2E7D32;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 10;
+    transition: all 0.3s ease;
     display: flex;
     align-items: center;
-    padding: 100px 0;
+    justify-content: center;
 }
 
-.hero-content {
-    max-width: 800px;
+.lightbox-close:hover {
+    background: #1B5E20;
+    transform: rotate(90deg);
 }
 
-.hero-content h1 {
-    font-size: 56px;
-    font-weight: 800;
+.lightbox-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 60px;
+    height: 60px;
+    background: rgba(46, 125, 50, 0.9);
     color: white;
-    line-height: 1.2;
+    border: none;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 10;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lightbox-nav:hover {
+    background: #1B5E20;
+    transform: translateY(-50%) scale(1.1);
+}
+
+.lightbox-nav.prev {
+    left: 20px;
+}
+
+.lightbox-nav.next {
+    right: 20px;
+}
+
+.lightbox-content {
+    display: flex;
+    height: 100%;
+}
+
+.lightbox-image-container {
+    flex: 0 0 65%;
+    height: 100%;
+    overflow: hidden;
+    background: #f8f9fa;
+}
+
+#lightbox-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    animation: zoomIn 0.5s ease;
+}
+
+.lightbox-info {
+    flex: 0 0 35%;
+    padding: 40px;
+    background: #F8FAFC;
+    overflow-y: auto;
+}
+
+.lightbox-info h3 {
+    color: #2E7D32;
+    font-size: 28px;
     margin-bottom: 20px;
-    text-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+    font-weight: 700;
+    line-height: 1.3;
 }
 
-.hero-content h1 span {
-    color: #FFC107;
+.lightbox-info p {
+    color: #666;
+    line-height: 1.7;
+    margin-bottom: 30px;
+    font-size: 16px;
 }
 
-.hero-tag {
-    background: rgba(255,193,7,0.2);
-    color: #FFC107;
+.lightbox-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-top: 20px;
+    border-top: 1px solid #e0e0e0;
+}
+
+.meta-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #666;
+    font-size: 14px;
+}
+
+.meta-item i {
+    color: #2E7D32;
+    width: 20px;
+}
+
+/* Gallery Filter */
+.gallery-filter {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    background: white;
+    border: 2px solid #E8F5E9;
+    color: #2E7D32;
     padding: 10px 25px;
     border-radius: 25px;
     font-weight: 600;
-    display: inline-block;
-    margin-bottom: 25px;
-    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
-.hero-content p {
-    font-size: 24px;
-    color: rgba(255,255,255,0.9);
-    line-height: 1.6;
+.filter-btn:hover {
+    background: #E8F5E9;
+    transform: translateY(-2px);
 }
 
-.scroll-indicator {
-    position: absolute;
-    bottom: 30px;
-    left: 50%;
-    transform: translateX(-50%);
-    text-align: center;
-    color: white;
-    z-index: 3;
-}
-
-.scroll-indicator div {
-    font-size: 14px;
-    letter-spacing: 2px;
-    margin-bottom: 10px;
-    opacity: 0.8;
-}
-
-.scroll-indicator i {
-    font-size: 20px;
-    animation: bounce 2s infinite;
-}
-
-
-.featured-gallery-section {
-    padding: 100px 0;
-    background: #F8FAFC;
-}
-
-.section-header {
-    text-align: center;
-    margin-bottom: 60px;
-}
-
-.section-header h2 {
-    font-size: 42px;
-    color: #2E7D32;
-    position: relative;
-    display: inline-block;
-    margin-bottom: 15px;
-}
-
-.section-header h2::after {
-    content: '';
-    position: absolute;
-    bottom: -10px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 80px;
-    height: 4px;
-    background: linear-gradient(to right, #2E7D32, #4CAF50);
-    border-radius: 2px;
-}
-
-.section-header .tag {
-    margin: 25px 0;
-    display: inline-block;
+.filter-btn.active {
     background: #2E7D32;
     color: white;
-    padding: 8px 20px;
-    border-radius: 20px;
-    font-size: 14px;
-    font-weight: 600;
+    border-color: #2E7D32;
 }
 
-.section-header p {
-    max-width: 800px;
-    margin: 0 auto;
-    font-size: 18px;
-    color: #666666;
-    line-height: 1.7;
-}
-
-/* ------------------------------ */
-/* PHOTO GRID - PERFECTLY ALIGNED */
-/* ------------------------------ */
-
+/* Enhanced Photo Grid */
 .photo-grid {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -298,13 +412,11 @@
     margin-bottom: 40px;
 }
 
-/* Large photo spans 2 columns and 2 rows */
 .photo-item.large {
     grid-column: span 8;
     grid-row: span 2;
 }
 
-/* Small photos - 2 per row on desktop */
 .photo-item:not(.large) {
     grid-column: span 4;
     grid-row: span 1;
@@ -315,6 +427,7 @@
     overflow: hidden;
     border-radius: 18px;
     height: 100%;
+    cursor: pointer;
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
     background: white;
@@ -332,7 +445,6 @@
     transition: transform 0.6s ease;
 }
 
-/* Overlay with perfect alignment */
 .photo-overlay {
     position: absolute;
     inset: 0;
@@ -376,6 +488,11 @@
     color: #FFC107;
 }
 
+.photo-item:not(.large) .photo-icon {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
 .photo-title {
     font-size: 22px;
     font-weight: 700;
@@ -385,6 +502,7 @@
 
 .photo-item:not(.large) .photo-title {
     font-size: 18px;
+    margin-bottom: 5px;
 }
 
 .photo-desc {
@@ -394,14 +512,33 @@
     margin-bottom: 15px;
 }
 
-.photo-label {
-    display: inline-block;
+.photo-tags {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+}
+
+.photo-tags .tag {
     background: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(10px);
-    padding: 6px 15px;
-    border-radius: 15px;
+    padding: 4px 12px;
+    border-radius: 12px;
     font-size: 12px;
     font-weight: 600;
+}
+
+.photo-cta {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 12px;
+    opacity: 0.8;
+    margin-top: 10px;
+}
+
+.photo-cta i {
+    color: #FFC107;
 }
 
 /* Hover Effects */
@@ -412,68 +549,35 @@
         0 0 0 1px rgba(255, 193, 7, 0.2);
 }
 
-/* ------------------------------ */
-/* VIEW ALL BUTTON */
-/* ------------------------------ */
-
-.view-all-wrapper {
-    text-align: center;
-    margin-top: 50px;
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
 
-.view-all-btn {
-    display: inline-flex;
-    align-items: center;
-    gap: 12px;
-    background: #2E7D32;
-    color: white;
-    padding: 16px 40px;
-    border-radius: 30px;
-    font-size: 18px;
-    font-weight: 600;
-    text-decoration: none;
-    transition: all 0.3s ease;
-    border: 2px solid transparent;
+@keyframes zoomIn {
+    from { transform: scale(0.95); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
 }
-
-.view-all-btn:hover {
-    background: #1B5E20;
-    transform: translateY(-3px);
-    box-shadow: 0 15px 30px rgba(46, 125, 50, 0.3);
-    border-color: #FFC107;
-}
-
-/* ------------------------------ */
-/* ANIMATIONS */
-/* ------------------------------ */
 
 @keyframes float {
-    0%, 100% {
-        transform: translateY(0px) rotate(0deg);
-    }
-    50% {
-        transform: translateY(-20px) rotate(5deg);
-    }
+    0%, 100% { transform: translateY(0px) rotate(0deg); }
+    50% { transform: translateY(-20px) rotate(5deg); }
 }
 
 @keyframes bounce {
-    0%, 100% {
-        transform: translateX(-50%) translateY(0);
-    }
-    50% {
-        transform: translateX(-50%) translateY(-10px);
-    }
+    0%, 100% { transform: translateX(-50%) translateY(0); }
+    50% { transform: translateX(-50%) translateY(-10px); }
+}
+
+@keyframes zoomEffect {
+    0% { transform: scale(1); }
+    100% { transform: scale(1.1); }
 }
 
 @keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
 }
 
 /* Photo card entrance animation */
@@ -488,11 +592,7 @@
 .photo-item:nth-child(4) { animation-delay: 0.4s; }
 .photo-item:nth-child(5) { animation-delay: 0.5s; }
 
-/* ------------------------------ */
-/* RESPONSIVE DESIGN */
-/* ------------------------------ */
-
-/* Tablet */
+/* Responsive Design */
 @media (max-width: 1024px) {
     .photo-grid {
         grid-template-columns: repeat(6, 1fr);
@@ -513,21 +613,28 @@
         aspect-ratio: 1/1;
     }
 
-    .hero-content h1 {
-        font-size: 42px;
+    .lightbox-content {
+        flex-direction: column;
     }
 
-    .hero-content p {
-        font-size: 20px;
+    .lightbox-image-container {
+        flex: 0 0 60%;
     }
 
-    .section-header h2 {
-        font-size: 36px;
+    .lightbox-info {
+        flex: 0 0 40%;
     }
 }
 
-/* Mobile */
 @media (max-width: 768px) {
+    .gallery-hero h1 {
+        font-size: 42px !important;
+    }
+
+    .gallery-hero p {
+        font-size: 20px !important;
+    }
+
     .photo-grid {
         grid-template-columns: repeat(1, 1fr);
         gap: 15px;
@@ -555,46 +662,43 @@
         padding: 20px;
     }
 
-    .photo-title {
-        font-size: 20px;
+    .lightbox-container {
+        width: 95%;
+        height: 95vh;
     }
 
-    .photo-item:not(.large) .photo-title {
-        font-size: 18px;
+    .lightbox-image-container {
+        flex: 0 0 50%;
     }
 
-    .photo-icon {
-        font-size: 32px;
+    .lightbox-info {
+        flex: 0 0 50%;
+        padding: 20px;
     }
 
-    .hero-content h1 {
-        font-size: 36px;
+    .lightbox-info h3 {
+        font-size: 22px;
     }
 
-    .hero-content p {
-        font-size: 18px;
+    .gallery-stats {
+        grid-template-columns: repeat(2, 1fr) !important;
+        padding: 20px !important;
     }
 
-    .section-header h2 {
-        font-size: 32px;
-    }
-
-    .section-header p {
-        font-size: 16px;
-        padding: 0 15px;
-    }
-
-    .featured-gallery-section {
-        padding: 60px 0;
-    }
-
-    .hero-container {
-        padding: 80px 0;
+    .stat-number {
+        font-size: 32px !important;
     }
 }
 
-/* Small Mobile */
-@media (max-width: 480px) {
+@media (max-width: 576px) {
+    .gallery-hero h1 {
+        font-size: 36px !important;
+    }
+
+    .gallery-hero p {
+        font-size: 18px !important;
+    }
+
     .photo-card {
         height: 250px;
     }
@@ -603,100 +707,256 @@
         height: 300px;
     }
 
-    .hero-content h1 {
-        font-size: 28px;
-    }
-
-    .floating-icon {
-        display: none;
-    }
-
-    .view-all-btn {
-        padding: 14px 30px;
-        font-size: 16px;
+    .lightbox-container {
+        height: 100vh;
+        border-radius: 0;
         width: 100%;
-        max-width: 300px;
-        justify-content: center;
+    }
+
+    .lightbox-content {
+        flex-direction: column;
+    }
+
+    .lightbox-image-container {
+        flex: 0 0 40%;
+    }
+
+    .lightbox-info {
+        flex: 0 0 60%;
+    }
+
+    .gallery-stats {
+        grid-template-columns: 1fr !important;
+        gap: 20px !important;
+    }
+
+    .gallery-filter {
+        gap: 10px;
+    }
+
+    .filter-btn {
+        padding: 8px 15px;
+        font-size: 14px;
     }
 }
 
-/* Accessibility */
-@media (prefers-reduced-motion: reduce) {
-    .photo-card,
-    .photo-overlay,
-    .photo-content,
-    .view-all-btn,
-    .floating-icon {
-        animation: none !important;
-        transition: none !important;
-    }
+/* Loading animation for images */
+img[loading="lazy"] {
+    opacity: 0;
+    transition: opacity 0.3s ease;
 }
 
-/* Print Styles */
-@media print {
-    .photo-overlay {
-        opacity: 1 !important;
-        background: rgba(0, 0, 0, 0.7) !important;
-    }
+img[loading="lazy"].loaded {
+    opacity: 1;
+}
 
-    .photo-card {
-        break-inside: avoid;
-        page-break-inside: avoid;
-    }
+/* Touch device optimization */
+.touch-device .photo-card {
+    cursor: pointer;
+}
 
-    .floating-icon,
-    .scroll-indicator,
-    .view-all-btn:hover {
-        display: none !important;
-    }
+.photo-card:active {
+    transform: scale(0.98);
 }
 
 </style>
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-    // Image lazy loading enhancement
-    const images = document.querySelectorAll('img[loading="lazy"]');
+    // Gallery Data
+    const galleryData = [
+        {
+            image: "/images/Field work.jpg",
+            title: "Community Clean-Up Day",
+            description: "Waste pickers and community members working together in Ubungo municipality to clean public spaces. This initiative not only improves the environment but also fosters community solidarity and recognition of waste pickers' essential role in urban cleanliness.",
+            date: "June 15, 2024",
+            location: "Ubungo, Dar es Salaam",
+            category: "community"
+        },
+        {
+            image: "/images/Scripting.jpg",
+            title: "Field Registration & Data Collection",
+            description: "Our team conducting field registration of waste pickers in Kinondoni municipality. This crucial data helps us advocate for formal recognition and better working conditions. Each registration brings us closer to comprehensive representation of waste pickers' needs.",
+            date: "May 20, 2024",
+            location: "Kinondoni, Dar es Salaam",
+            category: "advocacy"
+        },
+        {
+            image: "/images/Speaking4.jpg",
+            title: "Women Waste Pickers Assembly",
+            description: "A gathering of women waste pickers in Temeke municipality discussing challenges and solutions. Women comprise over 40% of waste pickers in Dar es Salaam and face unique challenges. These meetings empower them to voice their concerns and contribute to collective decision-making.",
+            date: "April 10, 2024",
+            location: "Temeke, Dar es Salaam",
+            category: "community"
+        },
+        {
+            image: "/images/Outside gathering.jpg",
+            title: "Safety & Rights Training Session",
+            description: "Educational workshop on occupational safety and workers' rights for waste pickers in Ilala municipality. Participants learn about protective equipment, handling hazardous materials, and their legal rights as informal sector workers.",
+            date: "July 5, 2024",
+            location: "Ilala, Dar es Salaam",
+            category: "education"
+        },
+        {
+            image: "/images/Speaking 3.jpg",
+            title: "Advocacy Strategy Meeting",
+            description: "MTAWADA representatives meeting with local government officials in Kigamboni to discuss waste picker recognition and integration into formal waste management systems. These dialogues are crucial for policy change and sustainable solutions.",
+            date: "March 22, 2024",
+            location: "Kigamboni, Dar es Salaam",
+            category: "advocacy"
+        }
+    ];
 
-    // Preload images for better UX
-    images.forEach(img => {
-        if (img.complete) {
-            img.classList.add('loaded');
-        } else {
-            img.addEventListener('load', function() {
-                this.classList.add('loaded');
-            });
+    // Lightbox Elements
+    const lightbox = document.getElementById('lightbox-modal');
+    const lightboxImage = document.getElementById('lightbox-image');
+    const lightboxTitle = document.getElementById('lightbox-title');
+    const lightboxDescription = document.getElementById('lightbox-description');
+    const lightboxDate = document.getElementById('lightbox-date');
+    const lightboxLocation = document.getElementById('lightbox-location');
+    const lightboxClose = document.getElementById('lightbox-close');
+    const lightboxPrev = document.getElementById('lightbox-prev');
+    const lightboxNext = document.getElementById('lightbox-next');
+
+    // Gallery Elements
+    const photoCards = document.querySelectorAll('.photo-card');
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    let currentImageIndex = 0;
+
+    // Open Lightbox
+    function openLightbox(index) {
+        const item = galleryData[index];
+        lightboxImage.src = item.image;
+        lightboxTitle.textContent = item.title;
+        lightboxDescription.textContent = item.description;
+        lightboxDate.textContent = item.date;
+        lightboxLocation.textContent = item.location;
+        currentImageIndex = index;
+
+        lightbox.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    }
+
+    // Close Lightbox
+    function closeLightbox() {
+        lightbox.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+
+    // Navigate Lightbox
+    function navigateLightbox(direction) {
+        currentImageIndex += direction;
+
+        if (currentImageIndex < 0) {
+            currentImageIndex = galleryData.length - 1;
+        } else if (currentImageIndex >= galleryData.length) {
+            currentImageIndex = 0;
+        }
+
+        const item = galleryData[currentImageIndex];
+        lightboxImage.src = item.image;
+        lightboxTitle.textContent = item.title;
+        lightboxDescription.textContent = item.description;
+        lightboxDate.textContent = item.date;
+        lightboxLocation.textContent = item.location;
+
+        // Add transition effect
+        lightboxImage.style.animation = 'none';
+        setTimeout(() => {
+            lightboxImage.style.animation = 'zoomIn 0.5s ease';
+        }, 10);
+    }
+
+    // Filter Gallery
+    function filterGallery(category) {
+        const items = document.querySelectorAll('.photo-item');
+
+        items.forEach(item => {
+            if (category === 'all' || item.dataset.filter === category) {
+                item.style.display = 'block';
+                setTimeout(() => {
+                    item.style.opacity = '1';
+                    item.style.transform = 'translateY(0)';
+                }, 10);
+            } else {
+                item.style.opacity = '0';
+                item.style.transform = 'translateY(20px)';
+                setTimeout(() => {
+                    item.style.display = 'none';
+                }, 300);
+            }
+        });
+
+        // Update active filter button
+        filterButtons.forEach(btn => {
+            btn.classList.remove('active');
+            if (btn.dataset.filter === category) {
+                btn.classList.add('active');
+            }
+        });
+    }
+
+    // Event Listeners
+    photoCards.forEach((card, index) => {
+        card.addEventListener('click', () => openLightbox(index));
+
+        // Keyboard navigation for accessibility
+        card.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                openLightbox(index);
+            }
+        });
+    });
+
+    lightboxClose.addEventListener('click', closeLightbox);
+    lightboxPrev.addEventListener('click', () => navigateLightbox(-1));
+    lightboxNext.addEventListener('click', () => navigateLightbox(1));
+
+    // Keyboard navigation for lightbox
+    document.addEventListener('keydown', (e) => {
+        if (!lightbox.classList.contains('active')) return;
+
+        switch(e.key) {
+            case 'Escape':
+                closeLightbox();
+                break;
+            case 'ArrowLeft':
+                navigateLightbox(-1);
+                break;
+            case 'ArrowRight':
+                navigateLightbox(1);
+                break;
         }
     });
 
-    // Add smooth hover effects
-    const photoCards = document.querySelectorAll('.photo-card');
-    photoCards.forEach(card => {
-        card.addEventListener('mouseenter', function() {
-            this.style.zIndex = '10';
-        });
-
-        card.addEventListener('mouseleave', function() {
-            this.style.zIndex = '1';
+    // Filter button events
+    filterButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+            filterGallery(btn.dataset.filter);
         });
     });
 
-    // Touch device optimization
-    if ('ontouchstart' in window) {
-        document.body.classList.add('touch-device');
-        // Add touch feedback
-        photoCards.forEach(card => {
-            card.addEventListener('touchstart', function() {
-                this.classList.add('touched');
-            });
+    // Close lightbox when clicking overlay
+    lightbox.addEventListener('click', (e) => {
+        if (e.target === lightbox) {
+            closeLightbox();
+        }
+    });
 
-            card.addEventListener('touchend', function() {
-                setTimeout(() => {
-                    this.classList.remove('touched');
-                }, 150);
-            });
+    // Image lazy loading
+    const images = document.querySelectorAll('img[loading="lazy"]');
+    const imageObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const img = entry.target;
+                img.classList.add('loaded');
+                imageObserver.unobserve(img);
+            }
         });
-    }
+    });
+
+    images.forEach(img => imageObserver.observe(img));
 
     // Smooth scroll for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -715,48 +975,33 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Animation on scroll
-    const observerOptions = {
-        threshold: 0.1,
-        rootMargin: '0px 0px -50px 0px'
-    };
-
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('in-view');
-            }
-        });
-    }, observerOptions);
-
-    // Observe photo items
-    document.querySelectorAll('.photo-item').forEach(item => {
-        observer.observe(item);
-    });
+    // Touch device detection
+    if ('ontouchstart' in window) {
+        document.body.classList.add('touch-device');
+    }
 });
 
 // Add CSS for loaded images
 const style = document.createElement('style');
 style.textContent = `
-    img[loading="lazy"] {
-        opacity: 0;
-        transition: opacity 0.3s ease;
+    .photo-item {
+        transition: all 0.3s ease;
     }
 
-    img[loading="lazy"].loaded {
-        opacity: 1;
+    .lightbox-image-container {
+        transition: all 0.3s ease;
     }
 
-    .touch-device .photo-card {
-        cursor: pointer;
-    }
-
-    .photo-card.touched {
-        transform: scale(0.98);
-    }
-
-    .photo-item.in-view {
-        animation-play-state: running;
+    @media (prefers-reduced-motion: reduce) {
+        .photo-card,
+        .photo-overlay,
+        .photo-content,
+        .lightbox-modal,
+        .lightbox-image,
+        * {
+            animation: none !important;
+            transition: none !important;
+        }
     }
 `;
 document.head.appendChild(style);

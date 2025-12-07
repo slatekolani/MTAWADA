@@ -6,7 +6,7 @@
 <!-- Hero Section -->
 <section class="history-hero" style="margin-top: 90px; position: relative; overflow: hidden;">
     <div class="hero-bg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
-        <div class="bg-overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(rgba(46, 125, 50, 0.7), rgba(76, 175, 80, 0.6)); z-index: 1;"></div>
+        <div class="bg-overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(rgba(46, 125, 50, 0.4), rgba(76, 175, 80, 0.3)); z-index: 1;"></div>
         <div class="bg-image" style="position: absolute; top: 0; left: 0; width: 100%; height: 200%; background-image: url('/images/Scripting.jpg'); background-size: cover; background-position: center; z-index: 0; filter: brightness(0.7);"></div>
     </div>
 
@@ -32,7 +32,7 @@
                     <div style="font-size: 14px; color: rgba(255, 255, 255, 0.8);">Municipalities Covered</div>
                 </div>
                 <div class="stat" style="text-align: center;">
-                    <div style="font-size: 36px; font-weight: 700; color: #FFC107; margin-bottom: 5px;">850+</div>
+                    <div style="font-size: 36px; font-weight: 700; color: #FFC107; margin-bottom: 5px;">1359+</div>
                     <div style="font-size: 14px; color: rgba(255, 255, 255, 0.8);">Waste Pickers United</div>
                 </div>
             </div>
@@ -199,7 +199,7 @@
                 <span style="position: absolute; bottom: -10px; left: 50%; transform: translateX(-50%); width: 80px; height: 4px; background: linear-gradient(to right, #2E7D32, #4CAF50); border-radius: 2px;"></span>
             </h2>
             <p style="max-width: 800px; margin: 30px auto 0; font-size: 18px; color: #666666; line-height: 1.7;">
-                Operating across all five municipalities of Dar es Salaam with dedicated waste picker networks
+                Operating are uniformly conducted across all municipalities within Dar es Salaam. In all these Municipalities, we exercise grassroot membership activities for MTAWADA.
             </p>
         </div>
 
