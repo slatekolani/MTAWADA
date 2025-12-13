@@ -6,7 +6,7 @@
 <!-- Hero Section with Image -->
 <section class="about-hero" style="margin-top: 90px; position: relative; overflow: hidden;">
     <div class="hero-bg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
-        <div class="bg-overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(rgba(46, 125, 50, 0.4), rgba(76, 175, 80, 0.3)); z-index: 1;"></div>
+        <div class="bg-overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(rgba(27, 94, 32, 0.4), rgba(46, 125, 50, 0.3)); z-index: 1;"></div>
         <div class="bg-image" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-image: url('/images/Management.jpg'); background-size: cover; background-position: center; z-index: 0; filter: brightness(0.7);"></div>
     </div>
 
@@ -17,7 +17,7 @@
     <div class="container" style="position: relative; z-index: 3; min-height: 500px; display: flex; align-items: center;">
         <div class="hero-content" style="max-width: 700px; padding: 100px 0;">
             <h1 style="font-size: 56px; font-weight: 800; color: white; margin-bottom: 20px; line-height: 1.2; text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);">
-                About <span style="color: #FFC107;">MTAWADA</span>
+                About <span style="color: #66BB6A;">MTAWADA</span>
             </h1>
             <p style="font-size: 24px; color: rgba(255, 255, 255, 0.9); margin-bottom: 30px; line-height: 1.6;">
                 Mtandao wa Waokota Taka Rejeshi Dar es Salaam
@@ -26,15 +26,15 @@
             </p>
             <div class="hero-stats" style="display: flex; gap: 30px; flex-wrap: wrap; margin-top: 40px;">
                 <div class="stat" style="text-align: center;">
-                    <div style="font-size: 36px; font-weight: 700; color: #FFC107; margin-bottom: 5px;">1359+</div>
+                    <div style="font-size: 36px; font-weight: 700; color: #66BB6A; margin-bottom: 5px;">1359+</div>
                     <div style="font-size: 14px; color: rgba(255, 255, 255, 0.8);">Members United</div>
                 </div>
                 <div class="stat" style="text-align: center;">
-                    <div style="font-size: 36px; font-weight: 700; color: #FFC107; margin-bottom: 5px;">5</div>
+                    <div style="font-size: 36px; font-weight: 700; color: #66BB6A; margin-bottom: 5px;">5</div>
                     <div style="font-size: 14px; color: rgba(255, 255, 255, 0.8);">Municipalities</div>
                 </div>
                 <div class="stat" style="text-align: center;">
-                    <div style="font-size: 36px; font-weight: 700; color: #FFC107; margin-bottom: 5px;">2024</div>
+                    <div style="font-size: 36px; font-weight: 700; color: #66BB6A; margin-bottom: 5px;">2024</div>
                     <div style="font-size: 14px; color: rgba(255, 255, 255, 0.8);">Established</div>
                 </div>
             </div>
@@ -52,9 +52,9 @@
 <section class="about-identity" style="padding: 100px 0; background: #F8FAFC;">
     <div class="container">
         <div class="section-header" style="text-align: center; margin-bottom: 60px;">
-            <h2 style="display: inline-block; position: relative; color: #2E7D32;">
+            <h2 style="display: inline-block; position: relative; color: #1B5E20;">
                 Who We Are
-                <span style="position: absolute; bottom: -10px; left: 50%; transform: translateX(-50%); width: 80px; height: 4px; background: linear-gradient(to right, #2E7D32, #4CAF50); border-radius: 2px;"></span>
+                <span style="position: absolute; bottom: -10px; left: 50%; transform: translateX(-50%); width: 80px; height: 4px; background: linear-gradient(to right, #1B5E20, #2E7D32); border-radius: 2px;"></span>
             </h2>
             <p style="max-width: 800px; margin: 30px auto 0; font-size: 18px; color: #666666; line-height: 1.7;">
                 A grassroots movement transforming waste management and empowering communities
@@ -63,8 +63,8 @@
 
         <div class="identity-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center;">
             <div class="identity-text">
-                <div class="identity-highlight" style="margin-bottom: 30px; padding: 25px; background: linear-gradient(135deg, rgba(46, 125, 50, 0.1), rgba(76, 175, 80, 0.1)); border-radius: 15px; border-left: 4px solid #2E7D32;">
-                    <h3 style="color: #2E7D32; margin-bottom: 15px; font-size: 24px;">
+                <div class="identity-highlight" style="margin-bottom: 30px; padding: 25px; background: linear-gradient(135deg, rgba(27, 94, 32, 0.1), rgba(46, 125, 50, 0.1)); border-radius: 15px; border-left: 4px solid #1B5E20;">
+                    <h3 style="color: #1B5E20; margin-bottom: 15px; font-size: 24px;">
                         <i class="fas fa-bullhorn" style="margin-right: 10px;"></i>
                         Our Identity
                     </h3>
@@ -75,7 +75,7 @@
 
                 <div class="identity-mission" style="margin-top: 30px;">
                     <h4 style="color: #333333; margin-bottom: 20px; font-size: 20px;">
-                        <i class="fas fa-handshake" style="color: #2E7D32; margin-right: 10px;"></i>
+                        <i class="fas fa-handshake" style="color: #1B5E20; margin-right: 10px;"></i>
                         Our Purpose
                     </h4>
                     <p style="font-size: 16px; line-height: 1.7; color: #666666; margin-bottom: 20px;">
@@ -89,7 +89,7 @@
 
             <div class="identity-visual">
                 <div class="visual-card" style="position: relative; overflow: hidden; border-radius: 20px; box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);">
-                    <div class="card-bg" style="height: 300px; background: linear-gradient(135deg, #2E7D32, #4CAF50); position: relative; display: flex; align-items: center; justify-content: center;">
+                    <div class="card-bg" style="height: 300px; background: linear-gradient(135deg, #1B5E20, #2E7D32); position: relative; display: flex; align-items: center; justify-content: center;">
                         <div style="text-align: center; color: white; padding: 40px;">
                             <div style="font-size: 80px; margin-bottom: 20px;">👥</div>
                             <h3 style="font-size: 24px; margin-bottom: 10px;">United We Stand</h3>
@@ -98,11 +98,11 @@
                     </div>
                     <div class="card-stats" style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; padding: 30px; background: white;">
                         <div style="text-align: center;">
-                            <div style="font-size: 28px; font-weight: 700; color: #2E7D32;">100%</div>
+                            <div style="font-size: 28px; font-weight: 700; color: #1B5E20;">100%</div>
                             <div style="font-size: 14px; color: #666666;">Grassroots Led</div>
                         </div>
                         <div style="text-align: center;">
-                            <div style="font-size: 28px; font-weight: 700; color: #4CAF50;">5/5</div>
+                            <div style="font-size: 28px; font-weight: 700; color: #2E7D32;">5/5</div>
                             <div style="font-size: 14px; color: #666666;">Municipalities Covered</div>
                         </div>
                     </div>
@@ -116,9 +116,9 @@
 <section class="about-structure" style="padding: 100px 0; background: white;">
     <div class="container">
         <div class="section-header" style="text-align: center; margin-bottom: 60px;">
-            <h2 style="display: inline-block; position: relative; color: #2E7D32;">
+            <h2 style="display: inline-block; position: relative; color: #1B5E20;">
                 Our Democratic Structure
-                <span style="position: absolute; bottom: -10px; left: 50%; transform: translateX(-50%); width: 80px; height: 4px; background: linear-gradient(to right, #2E7D32, #4CAF50); border-radius: 2px;"></span>
+                <span style="position: absolute; bottom: -10px; left: 50%; transform: translateX(-50%); width: 80px; height: 4px; background: linear-gradient(to right, #1B5E20, #2E7D32); border-radius: 2px;"></span>
             </h2>
             <p style="max-width: 800px; margin: 30px auto 0; font-size: 18px; color: #666666; line-height: 1.7;">
                 Organized from the grassroots with three levels of democratic decision-making
@@ -129,23 +129,23 @@
             <!-- Level 1 -->
             <div class="timeline-item" style="display: grid; grid-template-columns: 1fr 2fr; gap: 40px; align-items: center; margin-bottom: 60px; opacity: 0; transform: translateX(-50px); transition: all 0.8s ease;">
                 <div class="timeline-visual" style="text-align: center;">
-                    <div class="level-circle" style="width: 120px; height: 120px; background: linear-gradient(135deg, #2E7D32, #4CAF50); border-radius: 50%; margin: 0 auto 20px; display: flex; align-items: center; justify-content: center; color: white; font-size: 40px; box-shadow: 0 15px 30px rgba(46, 125, 50, 0.3);">
+                    <div class="level-circle" style="width: 120px; height: 120px; background: linear-gradient(135deg, #1B5E20, #2E7D32); border-radius: 50%; margin: 0 auto 20px; display: flex; align-items: center; justify-content: center; color: white; font-size: 40px; box-shadow: 0 15px 30px rgba(27, 94, 32, 0.3);">
                         <i class="fas fa-users"></i>
                     </div>
-                    <div class="level-number" style="font-size: 14px; color: #2E7D32; font-weight: 600; letter-spacing: 2px; margin-top: 10px;">
+                    <div class="level-number" style="font-size: 14px; color: #1B5E20; font-weight: 600; letter-spacing: 2px; margin-top: 10px;">
                         LEVEL 01
                     </div>
                 </div>
-                <div class="timeline-content" style="padding: 40px; background: #F8FAFC; border-radius: 20px; box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1); border-left: 5px solid #2E7D32;">
-                    <h3 style="color: #2E7D32; margin-bottom: 15px; font-size: 24px;">Street Level Democracy</h3>
+                <div class="timeline-content" style="padding: 40px; background: #F8FAFC; border-radius: 20px; box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1); border-left: 5px solid #1B5E20;">
+                    <h3 style="color: #1B5E20; margin-bottom: 15px; font-size: 24px;">Street Level Democracy</h3>
                     <p style="color: #666666; line-height: 1.7; margin-bottom: 20px;">
                         Members of MTAWADA participate in the general assembly as the highest decision-making body, exercising direct democracy at the street level.
                     </p>
                     <div class="level-features" style="display: flex; gap: 20px; flex-wrap: wrap;">
-                        <span style="background: rgba(46, 125, 50, 0.1); color: #2E7D32; padding: 8px 16px; border-radius: 20px; font-size: 14px; font-weight: 500;">
+                        <span style="background: rgba(27, 94, 32, 0.1); color: #1B5E20; padding: 8px 16px; border-radius: 20px; font-size: 14px; font-weight: 500;">
                             <i class="fas fa-vote-yea"></i> Direct Voting
                         </span>
-                        <span style="background: rgba(46, 125, 50, 0.1); color: #2E7D32; padding: 8px 16px; border-radius: 20px; font-size: 14px; font-weight: 500;">
+                        <span style="background: rgba(27, 94, 32, 0.1); color: #1B5E20; padding: 8px 16px; border-radius: 20px; font-size: 14px; font-weight: 500;">
                             <i class="fas fa-hand-paper"></i> Community Led
                         </span>
                     </div>
@@ -154,25 +154,25 @@
 
             <!-- Level 2 -->
             <div class="timeline-item" style="display: grid; grid-template-columns: 2fr 1fr; gap: 40px; align-items: center; margin-bottom: 60px; opacity: 0; transform: translateX(50px); transition: all 0.8s ease;">
-                <div class="timeline-content" style="padding: 40px; background: #F8FAFC; border-radius: 20px; box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1); border-right: 5px solid #4CAF50; order: 1;">
-                    <h3 style="color: #4CAF50; margin-bottom: 15px; font-size: 24px;">District Representation</h3>
+                <div class="timeline-content" style="padding: 40px; background: #F8FAFC; border-radius: 20px; box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1); border-right: 5px solid #2E7D32; order: 1;">
+                    <h3 style="color: #2E7D32; margin-bottom: 15px; font-size: 24px;">District Representation</h3>
                     <p style="color: #666666; line-height: 1.7; margin-bottom: 20px;">
                         The second, aggregated level composed of representatives from street levels (district delegates and chairpersons) coordinating activities across districts.
                     </p>
                     <div class="level-features" style="display: flex; gap: 20px; flex-wrap: wrap;">
-                        <span style="background: rgba(76, 175, 80, 0.1); color: #4CAF50; padding: 8px 16px; border-radius: 20px; font-size: 14px; font-weight: 500;">
+                        <span style="background: rgba(46, 125, 50, 0.1); color: #2E7D32; padding: 8px 16px; border-radius: 20px; font-size: 14px; font-weight: 500;">
                             <i class="fas fa-user-tie"></i> Elected Delegates
                         </span>
-                        <span style="background: rgba(76, 175, 80, 0.1); color: #4CAF50; padding: 8px 16px; border-radius: 20px; font-size: 14px; font-weight: 500;">
+                        <span style="background: rgba(46, 125, 50, 0.1); color: #2E7D32; padding: 8px 16px; border-radius: 20px; font-size: 14px; font-weight: 500;">
                             <i class="fas fa-map-marked"></i> District Coordination
                         </span>
                     </div>
                 </div>
                 <div class="timeline-visual" style="text-align: center; order: 2;">
-                    <div class="level-circle" style="width: 120px; height: 120px; background: linear-gradient(135deg, #4CAF50, #81C784); border-radius: 50%; margin: 0 auto 20px; display: flex; align-items: center; justify-content: center; color: white; font-size: 40px; box-shadow: 0 15px 30px rgba(76, 175, 80, 0.3);">
+                    <div class="level-circle" style="width: 120px; height: 120px; background: linear-gradient(135deg, #2E7D32, #4CAF50); border-radius: 50%; margin: 0 auto 20px; display: flex; align-items: center; justify-content: center; color: white; font-size: 40px; box-shadow: 0 15px 30px rgba(46, 125, 50, 0.3);">
                         <i class="fas fa-sitemap"></i>
                     </div>
-                    <div class="level-number" style="font-size: 14px; color: #4CAF50; font-weight: 600; letter-spacing: 2px; margin-top: 10px;">
+                    <div class="level-number" style="font-size: 14px; color: #2E7D32; font-weight: 600; letter-spacing: 2px; margin-top: 10px;">
                         LEVEL 02
                     </div>
                 </div>
@@ -181,23 +181,23 @@
             <!-- Level 3 -->
             <div class="timeline-item" style="display: grid; grid-template-columns: 1fr 2fr; gap: 40px; align-items: center; opacity: 0; transform: translateX(-50px); transition: all 0.8s ease;">
                 <div class="timeline-visual" style="text-align: center;">
-                    <div class="level-circle" style="width: 120px; height: 120px; background: linear-gradient(135deg, #FFC107, #FF9800); border-radius: 50%; margin: 0 auto 20px; display: flex; align-items: center; justify-content: center; color: white; font-size: 40px; box-shadow: 0 15px 30px rgba(255, 152, 0, 0.3);">
+                    <div class="level-circle" style="width: 120px; height: 120px; background: linear-gradient(135deg, #4CAF50, #66BB6A); border-radius: 50%; margin: 0 auto 20px; display: flex; align-items: center; justify-content: center; color: white; font-size: 40px; box-shadow: 0 15px 30px rgba(76, 175, 80, 0.3);">
                         <i class="fas fa-handshake"></i>
                     </div>
-                    <div class="level-number" style="font-size: 14px; color: #FF9800; font-weight: 600; letter-spacing: 2px; margin-top: 10px;">
+                    <div class="level-number" style="font-size: 14px; color: #4CAF50; font-weight: 600; letter-spacing: 2px; margin-top: 10px;">
                         LEVEL 03
                     </div>
                 </div>
-                <div class="timeline-content" style="padding: 40px; background: #F8FAFC; border-radius: 20px; box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1); border-left: 5px solid #FF9800;">
-                    <h3 style="color: #FF9800; margin-bottom: 15px; font-size: 24px;">Regional Coordination</h3>
+                <div class="timeline-content" style="padding: 40px; background: #F8FAFC; border-radius: 20px; box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1); border-left: 5px solid #4CAF50;">
+                    <h3 style="color: #4CAF50; margin-bottom: 15px; font-size: 24px;">Regional Coordination</h3>
                     <p style="color: #666666; line-height: 1.7; margin-bottom: 20px;">
                         Representatives from all five municipalities in Dar es Salaam meet at the regional level to develop strategies, share best practices, and advocate for policy changes.
                     </p>
                     <div class="level-features" style="display: flex; gap: 20px; flex-wrap: wrap;">
-                        <span style="background: rgba(255, 152, 0, 0.1); color: #FF9800; padding: 8px 16px; border-radius: 20px; font-size: 14px; font-weight: 500;">
+                        <span style="background: rgba(76, 175, 80, 0.1); color: #4CAF50; padding: 8px 16px; border-radius: 20px; font-size: 14px; font-weight: 500;">
                             <i class="fas fa-city"></i> Municipal Representation
                         </span>
-                        <span style="background: rgba(255, 152, 0, 0.1); color: #FF9800; padding: 8px 16px; border-radius: 20px; font-size: 14px; font-weight: 500;">
+                        <span style="background: rgba(76, 175, 80, 0.1); color: #4CAF50; padding: 8px 16px; border-radius: 20px; font-size: 14px; font-weight: 500;">
                             <i class="fas fa-bullhorn"></i> Regional Advocacy
                         </span>
                     </div>
@@ -211,9 +211,9 @@
 <section class="about-journey" style="padding: 100px 0; background: #F8FAFC;">
     <div class="container">
         <div class="section-header" style="text-align: center; margin-bottom: 60px;">
-            <h2 style="display: inline-block; position: relative; color: #2E7D32;">
+            <h2 style="display: inline-block; position: relative; color: #1B5E20;">
                 Our Journey
-                <span style="position: absolute; bottom: -10px; left: 50%; transform: translateX(-50%); width: 80px; height: 4px; background: linear-gradient(to right, #2E7D32, #4CAF50); border-radius: 2px;"></span>
+                <span style="position: absolute; bottom: -10px; left: 50%; transform: translateX(-50%); width: 80px; height: 4px; background: linear-gradient(to right, #1B5E20, #2E7D32); border-radius: 2px;"></span>
             </h2>
             <p style="max-width: 800px; margin: 30px auto 0; font-size: 18px; color: #666666; line-height: 1.7;">
                 From grassroots advocacy to a registered network of waste pickers
@@ -222,60 +222,60 @@
 
         <div class="journey-timeline" style="position: relative; max-width: 1000px; margin: 0 auto;">
             <!-- Timeline Line -->
-            <div class="timeline-line" style="position: absolute; left: 50%; top: 0; bottom: 0; width: 3px; background: linear-gradient(to bottom, #2E7D32, #4CAF50, #FF9800); transform: translateX(-50%);"></div>
+            <div class="timeline-line" style="position: absolute; left: 50%; top: 0; bottom: 0; width: 3px; background: linear-gradient(to bottom, #1B5E20, #2E7D32, #4CAF50, #66BB6A); transform: translateX(-50%);"></div>
 
             <!-- Timeline Items -->
             <div class="journey-item left" style="display: flex; justify-content: flex-end; margin-bottom: 80px; position: relative;">
-                <div class="item-content" style="width: 45%; padding: 40px; background: white; border-radius: 20px; box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1); border-right: 5px solid #2E7D32;">
-                    <div class="item-icon" style="width: 60px; height: 60px; background: linear-gradient(135deg, #2E7D32, #4CAF50); border-radius: 15px; display: flex; align-items: center; justify-content: center; color: white; font-size: 24px; margin-bottom: 20px;">
+                <div class="item-content" style="width: 45%; padding: 40px; background: white; border-radius: 20px; box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1); border-right: 5px solid #1B5E20;">
+                    <div class="item-icon" style="width: 60px; height: 60px; background: linear-gradient(135deg, #1B5E20, #2E7D32); border-radius: 15px; display: flex; align-items: center; justify-content: center; color: white; font-size: 24px; margin-bottom: 20px;">
                         <i class="fas fa-lightbulb"></i>
                     </div>
-                    <h3 style="color: #2E7D32; margin-bottom: 15px; font-size: 22px;">The Beginning</h3>
+                    <h3 style="color: #1B5E20; margin-bottom: 15px; font-size: 22px;">The Beginning</h3>
                     <p style="color: #666666; line-height: 1.7; margin-bottom: 20px;">
                         MTAWADA originated from an Extended Producer Responsibility (EPR) advocacy project for plastic waste management in Tanzania, aiming to hold producers accountable for post-consumption waste.
                     </p>
-                    <div class="item-year" style="font-size: 14px; color: #2E7D32; font-weight: 600; display: flex; align-items: center; gap: 8px;">
+                    <div class="item-year" style="font-size: 14px; color: #1B5E20; font-weight: 600; display: flex; align-items: center; gap: 8px;">
                         <i class="far fa-calendar"></i> 2023
+                    </div>
+                </div>
+                <div class="timeline-dot" style="position: absolute; left: 50%; top: 50%; width: 20px; height: 20px; background: #1B5E20; border-radius: 50%; transform: translate(-50%, -50%); border: 4px solid white; box-shadow: 0 0 0 3px #1B5E20;"></div>
+            </div>
+
+            <div class="journey-item right" style="display: flex; justify-content: flex-start; margin-bottom: 80px; position: relative;">
+                <div class="item-content" style="width: 45%; padding: 40px; background: white; border-radius: 20px; box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1); border-left: 5px solid #2E7D32;">
+                    <div class="item-icon" style="width: 60px; height: 60px; background: linear-gradient(135deg, #2E7D32, #4CAF50); border-radius: 15px; display: flex; align-items: center; justify-content: center; color: white; font-size: 24px; margin-bottom: 20px;">
+                        <i class="fas fa-hands-helping"></i>
+                    </div>
+                    <h3 style="color: #2E7D32; margin-bottom: 15px; font-size: 22px;">Collaboration & Research</h3>
+                    <p style="color: #666666; line-height: 1.7; margin-bottom: 20px;">
+                        Partnered with HUDEFO and the University of Dar es Salaam to understand waste pickers' experiences through direct engagement at work sites across all five municipalities.
+                    </p>
+                    <div class="item-year" style="font-size: 14px; color: #2E7D32; font-weight: 600; display: flex; align-items: center; gap: 8px;">
+                        <i class="far fa-calendar"></i> 2023-2024
                     </div>
                 </div>
                 <div class="timeline-dot" style="position: absolute; left: 50%; top: 50%; width: 20px; height: 20px; background: #2E7D32; border-radius: 50%; transform: translate(-50%, -50%); border: 4px solid white; box-shadow: 0 0 0 3px #2E7D32;"></div>
             </div>
 
-            <div class="journey-item right" style="display: flex; justify-content: flex-start; margin-bottom: 80px; position: relative;">
-                <div class="item-content" style="width: 45%; padding: 40px; background: white; border-radius: 20px; box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1); border-left: 5px solid #4CAF50;">
-                    <div class="item-icon" style="width: 60px; height: 60px; background: linear-gradient(135deg, #4CAF50, #81C784); border-radius: 15px; display: flex; align-items: center; justify-content: center; color: white; font-size: 24px; margin-bottom: 20px;">
-                        <i class="fas fa-hands-helping"></i>
+            <div class="journey-item left" style="display: flex; justify-content: flex-end; margin-bottom: 80px; position: relative;">
+                <div class="item-content" style="width: 45%; padding: 40px; background: white; border-radius: 20px; box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1); border-right: 5px solid #4CAF50;">
+                    <div class="item-icon" style="width: 60px; height: 60px; background: linear-gradient(135deg, #4CAF50, #66BB6A); border-radius: 15px; display: flex; align-items: center; justify-content: center; color: white; font-size: 24px; margin-bottom: 20px;">
+                        <i class="fas fa-file-contract"></i>
                     </div>
-                    <h3 style="color: #4CAF50; margin-bottom: 15px; font-size: 22px;">Collaboration & Research</h3>
+                    <h3 style="color: #4CAF50; margin-bottom: 15px; font-size: 22px;">Constitutional Development</h3>
                     <p style="color: #666666; line-height: 1.7; margin-bottom: 20px;">
-                        Partnered with HUDEFO and the University of Dar es Salaam to understand waste pickers' experiences through direct engagement at work sites across all five municipalities.
+                        Developed our constitution through collaborative exchange sessions with waste picker representatives, ensuring our governance structure reflects our members' needs and aspirations.
                     </p>
                     <div class="item-year" style="font-size: 14px; color: #4CAF50; font-weight: 600; display: flex; align-items: center; gap: 8px;">
-                        <i class="far fa-calendar"></i> 2023-2024
+                        <i class="far fa-calendar"></i> Early 2024
                     </div>
                 </div>
                 <div class="timeline-dot" style="position: absolute; left: 50%; top: 50%; width: 20px; height: 20px; background: #4CAF50; border-radius: 50%; transform: translate(-50%, -50%); border: 4px solid white; box-shadow: 0 0 0 3px #4CAF50;"></div>
             </div>
 
-            <div class="journey-item left" style="display: flex; justify-content: flex-end; margin-bottom: 80px; position: relative;">
-                <div class="item-content" style="width: 45%; padding: 40px; background: white; border-radius: 20px; box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1); border-right: 5px solid #FF9800;">
-                    <div class="item-icon" style="width: 60px; height: 60px; background: linear-gradient(135deg, #FFC107, #FF9800); border-radius: 15px; display: flex; align-items: center; justify-content: center; color: white; font-size: 24px; margin-bottom: 20px;">
-                        <i class="fas fa-file-contract"></i>
-                    </div>
-                    <h3 style="color: #FF9800; margin-bottom: 15px; font-size: 22px;">Constitutional Development</h3>
-                    <p style="color: #666666; line-height: 1.7; margin-bottom: 20px;">
-                        Developed our constitution through collaborative exchange sessions with waste picker representatives, ensuring our governance structure reflects our members' needs and aspirations.
-                    </p>
-                    <div class="item-year" style="font-size: 14px; color: #FF9800; font-weight: 600; display: flex; align-items: center; gap: 8px;">
-                        <i class="far fa-calendar"></i> Early 2024
-                    </div>
-                </div>
-                <div class="timeline-dot" style="position: absolute; left: 50%; top: 50%; width: 20px; height: 20px; background: #FF9800; border-radius: 50%; transform: translate(-50%, -50%); border: 4px solid white; box-shadow: 0 0 0 3px #FF9800;"></div>
-            </div>
-
             <div class="journey-item right" style="display: flex; justify-content: flex-start; position: relative;">
-                <div class="item-content" style="width: 45%; padding: 40px; background: white; border-radius: 20px; box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1); border-left: 5px solid #81C784;">
-                    <div class="item-icon" style="width: 60px; height: 60px; background: linear-gradient(135deg, #81C784, #66BB6A); border-radius: 15px; display: flex; align-items: center; justify-content: center; color: white; font-size: 24px; margin-bottom: 20px;">
+                <div class="item-content" style="width: 45%; padding: 40px; background: white; border-radius: 20px; box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1); border-left: 5px solid #66BB6A;">
+                    <div class="item-icon" style="width: 60px; height: 60px; background: linear-gradient(135deg, #66BB6A, #81C784); border-radius: 15px; display: flex; align-items: center; justify-content: center; color: white; font-size: 24px; margin-bottom: 20px;">
                         <i class="fas fa-award"></i>
                     </div>
                     <h3 style="color: #388E3C; margin-bottom: 15px; font-size: 22px;">Official Registration</h3>
@@ -286,14 +286,14 @@
                         <i class="far fa-calendar"></i> April 2024
                     </div>
                 </div>
-                <div class="timeline-dot" style="position: absolute; left: 50%; top: 50%; width: 20px; height: 20px; background: #81C784; border-radius: 50%; transform: translate(-50%, -50%); border: 4px solid white; box-shadow: 0 0 0 3px #81C784;"></div>
+                <div class="timeline-dot" style="position: absolute; left: 50%; top: 50%; width: 20px; height: 20px; background: #66BB6A; border-radius: 50%; transform: translate(-50%, -50%); border: 4px solid white; box-shadow: 0 0 0 3px #66BB6A;"></div>
             </div>
         </div>
     </div>
 </section>
 
 <!-- Municipal Coverage -->
-<section class="about-municipalities" style="padding: 100px 0; background: linear-gradient(135deg, #2E7D32 0%, #4CAF50 100%); position: relative;">
+<section class="about-municipalities" style="padding: 100px 0; background: linear-gradient(135deg, #1B5E20 0%, #2E7D32 100%); position: relative;">
     <div class="container">
         <div class="section-header" style="text-align: center; margin-bottom: 60px;">
             <h2 style="display: inline-block; position: relative; color: white;">
@@ -336,7 +336,7 @@
 </section>
 
 <!-- Call to Action -->
-<section class="about-cta" style="padding: 120px 0; background: linear-gradient(135deg, #2E7D32 0%, #4CAF50 100%); position: relative; overflow: hidden;">
+<section class="about-cta" style="padding: 120px 0; background: linear-gradient(135deg, #1B5E20 0%, #2E7D32 100%); position: relative; overflow: hidden;">
     <div class="floating-element" style="position: absolute; top: 20%; left: 5%; font-size: 60px; opacity: 0.1; color: white; animation: float 20s infinite ease-in-out;">♻️</div>
     <div class="floating-element" style="position: absolute; bottom: 30%; right: 5%; font-size: 60px; opacity: 0.1; color: white; animation: float 25s infinite ease-in-out reverse;">👥</div>
 
@@ -348,7 +348,6 @@
                 and environmental sustainability. Together, we can build a stronger voice for waste pickers' rights.
             </p>
             <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
-              
                 <a href="{{route('mtawada.contact')}}" class="btn-secondary" style="background: transparent; color: white; padding: 16px 40px; border-radius: 30px; text-decoration: none; font-weight: 600; border: 2px solid white; display: inline-flex; align-items: center; gap: 12px; transition: all 0.3s;">
                     <i class="fas fa-envelope"></i> Contact Us
                 </a>
@@ -399,13 +398,13 @@
 
     .btn-primary:hover {
         transform: translateY(-3px) scale(1.05);
-        box-shadow: 0 12px 30px rgba(255, 193, 7, 0.4) !important;
-        background: #FFB300 !important;
+        box-shadow: 0 12px 30px rgba(102, 187, 106, 0.4) !important;
+        background: #4CAF50 !important;
     }
 
     .btn-secondary:hover {
         background: white !important;
-        color: #2E7D32 !important;
+        color: #1B5E20 !important;
         transform: translateY(-3px);
     }
 

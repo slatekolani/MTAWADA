@@ -119,12 +119,12 @@
                 <!-- Logo & Description -->
                 <div class="footer-column footer-about">
                     <div class="footer-logo">
-                        <div class="logo-icon" style="background: #2E7D32;">
+                        <div class="logo-icon" style="background: #1B5E20;">
                             <i class="fas fa-recycle" style="color: white;"></i>
                         </div>
                         <div class="logo-text">
                             <h3 style="color: white;">MTAWADA</h3>
-                            <p style="color: #FFC107;">Utu na Uhai wa Mazingira</p>
+                            <p style="color: #66BB6A;">Utu na Uhai wa Mazingira</p>
                         </div>
                     </div>
                     <p class="footer-description" style="color: rgba(255, 255, 255, 0.8);">
@@ -134,14 +134,14 @@
                         <div class="achievement">
                             <div class="achievement-icon" style="background: rgba(255, 255, 255, 0.2); color: white;">👥</div>
                             <div class="achievement-text">
-                                <span class="achievement-number" style="color: #FFC107;">1359+</span>
+                                <span class="achievement-number" style="color: #66BB6A;">1359+</span>
                                 <span class="achievement-label" style="color: rgba(255, 255, 255, 0.8);">Members</span>
                             </div>
                         </div>
                         <div class="achievement">
                             <div class="achievement-icon" style="background: rgba(255, 255, 255, 0.2); color: white;">🏙️</div>
                             <div class="achievement-text">
-                                <span class="achievement-number" style="color: #FFC107;">5</span>
+                                <span class="achievement-number" style="color: #66BB6A;">5</span>
                                 <span class="achievement-label" style="color: rgba(255, 255, 255, 0.8);">Municipalities</span>
                             </div>
                         </div>
@@ -154,33 +154,33 @@
                     <ul class="footer-menu">
                         <li>
                             <a href="{{route('mtawada.home')}}" class="footer-link" style="color: rgba(255, 255, 255, 0.8);">
-                                <span class="link-icon" style="color: #FFC107;">→</span>
+                                <span class="link-icon" style="color: #66BB6A;">→</span>
                                 <span>Home </span>
                             </a>
                         </li>
                         <li>
                             <a href="{{route('mtawada.about')}}" class="footer-link" style="color: rgba(255, 255, 255, 0.8);">
-                                <span class="link-icon" style="color: #FFC107;">→</span>
+                                <span class="link-icon" style="color: #66BB6A;">→</span>
                                 <span>About Us</span>
                             </a>
                         </li>
 
-                        
+
                         <li>
                             <a href="{{route('mtawada.impact')}}" class="footer-link" style="color: rgba(255, 255, 255, 0.8);">
-                                <span class="link-icon" style="color: #FFC107;">→</span>
+                                <span class="link-icon" style="color: #66BB6A;">→</span>
                                 <span>Our Impact</span>
                             </a>
                         </li>
                         <li>
                             <a href="{{route('mtawada.gallery')}}" class="footer-link" style="color: rgba(255, 255, 255, 0.8);">
-                                <span class="link-icon" style="color: #FFC107;">→</span>
+                                <span class="link-icon" style="color: #66BB6A;">→</span>
                                 <span>Photo Gallery</span>
                             </a>
                         </li>
                         <li>
                             <a href="{{route('mtawada.contact')}}" class="footer-link" style="color: rgba(255, 255, 255, 0.8);">
-                                <span class="link-icon" style="color: #FFC107;">→</span>
+                                <span class="link-icon" style="color: #66BB6A;">→</span>
                                 <span>Contact Us</span>
                             </a>
                         </li>
@@ -279,17 +279,17 @@
             </div>
 
             <!-- Footer Bottom -->
-            <div class="footer-bottom" style="background: linear-gradient(to right, #2E7D32, #4CAF50);">
+            <div class="footer-bottom" style="background: linear-gradient(to right, #1B5E20, #2E7D32);">
                 <div class="footer-bottom-content">
                     <div class="copyright">
-                        <p style="color: white;">&copy; 2025 <strong style="color: #FFC107;">MTAWADA</strong> - Mtandao wa Waokota Taka Rejeshi Dar es Salaam. All rights reserved.</p>
+                        <p style="color: white;">&copy; 2025 <strong style="color: #66BB6A;">MTAWADA</strong> - Mtandao wa Waokota Taka Rejeshi Dar es Salaam. All rights reserved.</p>
                         <p class="registration" style="color: rgba(255, 255, 255, 0.8);">Registered with the Ministry of Home Affairs of Tanzania under The Societies Act (CAP.337 R.E.2002)</p>
                     </div>
 
                 </div>
 
                 <!-- Back to Top -->
-                <button class="back-to-top" aria-label="Back to top" style="background: #FFC107; color: #333333;">
+                <button class="back-to-top" aria-label="Back to top" style="background: #66BB6A; color: white;">
                     <i class="fas fa-arrow-up"></i>
                 </button>
             </div>

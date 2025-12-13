@@ -179,36 +179,36 @@
 </section>
 
 <!-- Our Structure -->
-<section class="parallax-section" style="padding: 120px 0; background: linear-gradient(135deg, var(--labor-green) 0%, #4CAF50 100%);">
+<section class="parallax-section" style="padding: 120px 0; background: linear-gradient(135deg, #1B5E20 0%, #2E7D32 100%);">
     <div class="container">
         <div class="section-header">
-            <h2 class="section-title">Grassroots Democracy</h2>
-            <div class="section-divider" ></div>
-            <p class="section-subtitle">Three-tier decision making structure from streets to region</p>
+            <h2 class="section-title" style="color: white;">Grassroots Democracy</h2>
+            <div class="section-divider" style="background: linear-gradient(135deg, #66BB6A, #81C784);"></div>
+            <p class="section-subtitle" style="color: rgba(255, 255, 255, 0.9);">Three-tier decision making structure from streets to region</p>
         </div>
 
         <div class="structure-timeline">
             <div class="timeline-step fade-in" style="text-align: center; margin-bottom: 40px;">
                 <div style="display: inline-block; background: rgba(255, 255, 255, 0.2); padding: 30px; border-radius: 20px; backdrop-filter: blur(10px);">
                     <div style="font-size: 48px; margin-bottom: 20px;">👥</div>
-                    <h3 style="margin-bottom: 15px;">Street Level Democracy</h3>
-                    <p>Direct participation in general assembly as highest decision-making body</p>
+                    <h3 style="margin-bottom: 15px; color: white;">Street Level Democracy</h3>
+                    <p style="color: rgba(255, 255, 255, 0.9);">Direct participation in general assembly as highest decision-making body</p>
                 </div>
             </div>
 
             <div class="timeline-step fade-in" style="text-align: center; margin-bottom: 40px;">
                 <div style="display: inline-block; background: rgba(255, 255, 255, 0.2); padding: 30px; border-radius: 20px; backdrop-filter: blur(10px);">
                     <div style="font-size: 48px; margin-bottom: 20px;">🏢</div>
-                    <h3 style="margin-bottom: 15px;">District Representation</h3>
-                    <p>Delegates and chairpersons from street levels coordinate district activities</p>
+                    <h3 style="margin-bottom: 15px; color: white;">District Representation</h3>
+                    <p style="color: rgba(255, 255, 255, 0.9);">Delegates and chairpersons from street levels coordinate district activities</p>
                 </div>
             </div>
 
             <div class="timeline-step fade-in" style="text-align: center;">
                 <div style="display: inline-block; background: rgba(255, 255, 255, 0.2); padding: 30px; border-radius: 20px; backdrop-filter: blur(10px);">
                     <div style="font-size: 48px; margin-bottom: 20px;">🗺️</div>
-                    <h3 style="margin-bottom: 15px;">Regional Coordination</h3>
-                    <p>Representatives from all five municipalities meet for regional strategy</p>
+                    <h3 style="margin-bottom: 15px; color: white;">Regional Coordination</h3>
+                    <p style="color: rgba(255, 255, 255, 0.9);">Representatives from all five municipalities meet for regional strategy</p>
                 </div>
             </div>
         </div>
@@ -269,28 +269,27 @@
 </section>
 
 <!-- Call to Action -->
-<section style="padding: 150px 0; background: linear-gradient(135deg, var(--dignity-orange) 0%, var(--sun-yellow) 100%); position: relative; overflow: hidden;">
+<section style="padding: 150px 0; background: linear-gradient(135deg, #1B5E20 0%, #2E7D32 100%); position: relative; overflow: hidden;">
     <div class="floating-element floating-1" style="opacity: 0.2;">🤝</div>
     <div class="floating-element floating-2" style="opacity: 0.2;">♻️</div>
 
     <div class="container">
         <div class="section-header">
-            <h2 class="section-title" >Ready to Make a Difference?</h2>
-            <div class="section-divider" ></div>
-            <p class="section-subtitle" style="max-width: 600px;">
+            <h2 class="section-title" style="color: white;">Ready to Make a Difference?</h2>
+            <div class="section-divider" style="background: linear-gradient(135deg, #66BB6A, #81C784);"></div>
+            <p class="section-subtitle" style="max-width: 600px; color: rgba(255, 255, 255, 0.9);">
                 Join over 1359 waste pickers fighting for recognition, rights, and environmental sustainability in Dar es Salaam.
             </p>
         </div>
 
         <div style="text-align: center; margin-top: 50px;">
             <div class="hero-buttons">
-               
-                <a href="{{route('mtawada.contact')}}" class="btn-secondary" style=" color: var(--dignity-orange);">
+                <a href="{{route('mtawada.contact')}}" class="btn-secondary" style="background: white; color: #1B5E20; border-color: white;">
                     <i class="fas fa-envelope"></i> Contact Us Today
                 </a>
             </div>
 
-            <p style="color: var(--dignity-orange); margin-top: 30px; font-size: 14px;">
+            <p style="color: white; margin-top: 30px; font-size: 14px;">
                 <i class="fas fa-phone"></i> Call us: +255 793543206 |
                 <i class="fas fa-envelope"></i> Email: info@mtawada.or.tz
             </p>

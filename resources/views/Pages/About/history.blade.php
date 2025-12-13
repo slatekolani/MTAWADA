@@ -6,7 +6,7 @@
 <!-- Hero Section -->
 <section class="history-hero" style="margin-top: 90px; position: relative; overflow: hidden;">
     <div class="hero-bg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
-        <div class="bg-overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(rgba(46, 125, 50, 0.4), rgba(76, 175, 80, 0.3)); z-index: 1;"></div>
+        <div class="bg-overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(rgba(27, 94, 32, 0.4), rgba(46, 125, 50, 0.3)); z-index: 1;"></div>
         <div class="bg-image" style="position: absolute; top: 0; left: 0; width: 100%; height: 200%; background-image: url('/images/Scripting.jpg'); background-size: cover; background-position: center; z-index: 0; filter: brightness(0.7);"></div>
     </div>
 
@@ -17,22 +17,22 @@
     <div class="container" style="position: relative; z-index: 3; min-height: 500px; display: flex; align-items: center;">
         <div class="hero-content" style="max-width: 800px; padding: 100px 0;">
             <h1 style="font-size: 56px; font-weight: 800; color: white; margin-bottom: 20px; line-height: 1.2; text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);">
-                Our <span style="color: #FFC107;">Journey</span>
+                Our <span style="color: #66BB6A;">Journey</span>
             </h1>
             <p style="font-size: 24px; color: rgba(255, 255, 255, 0.9); margin-bottom: 30px; line-height: 1.6;">
                 From grassroots advocacy to a registered network of waste pickers
             </p>
             <div class="hero-stats" style="display: flex; gap: 30px; flex-wrap: wrap; margin-top: 40px;">
                 <div class="stat" style="text-align: center;">
-                    <div style="font-size: 36px; font-weight: 700; color: #FFC107; margin-bottom: 5px;">2024</div>
+                    <div style="font-size: 36px; font-weight: 700; color: #66BB6A; margin-bottom: 5px;">2024</div>
                     <div style="font-size: 14px; color: rgba(255, 255, 255, 0.8);">Officially Registered</div>
                 </div>
                 <div class="stat" style="text-align: center;">
-                    <div style="font-size: 36px; font-weight: 700; color: #FFC107; margin-bottom: 5px;">5</div>
+                    <div style="font-size: 36px; font-weight: 700; color: #66BB6A; margin-bottom: 5px;">5</div>
                     <div style="font-size: 14px; color: rgba(255, 255, 255, 0.8);">Municipalities Covered</div>
                 </div>
                 <div class="stat" style="text-align: center;">
-                    <div style="font-size: 36px; font-weight: 700; color: #FFC107; margin-bottom: 5px;">1359+</div>
+                    <div style="font-size: 36px; font-weight: 700; color: #66BB6A; margin-bottom: 5px;">1359+</div>
                     <div style="font-size: 14px; color: rgba(255, 255, 255, 0.8);">Waste Pickers United</div>
                 </div>
             </div>
@@ -50,9 +50,9 @@
 <section class="history-origin" style="padding: 100px 0; background: white;">
     <div class="container">
         <div class="section-header" style="text-align: center; margin-bottom: 60px;">
-            <h2 style="display: inline-block; position: relative; font-size: 42px; color: #2E7D32;">
+            <h2 style="display: inline-block; position: relative; font-size: 42px; color: #1B5E20;">
                 The Beginning of Our Story
-                <span style="position: absolute; bottom: -10px; left: 50%; transform: translateX(-50%); width: 80px; height: 4px; background: linear-gradient(to right, #2E7D32, #4CAF50); border-radius: 2px;"></span>
+                <span style="position: absolute; bottom: -10px; left: 50%; transform: translateX(-50%); width: 80px; height: 4px; background: linear-gradient(to right, #1B5E20, #2E7D32); border-radius: 2px;"></span>
             </h2>
             <p style="max-width: 800px; margin: 30px auto 0; font-size: 18px; color: #666666; line-height: 1.7;">
                 How a simple advocacy project grew into a powerful movement for waste pickers' rights
@@ -60,20 +60,20 @@
         </div>
 
         <div class="origin-content" style="max-width: 900px; margin: 0 auto;">
-            <div class="origin-card" style="background: #F8FAFC; border-radius: 20px; padding: 60px; box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08); border-left: 5px solid #2E7D32;">
-                <div class="origin-icon" style="width: 80px; height: 80px; background: #2E7D32; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 40px; color: white; font-size: 36px;">
+            <div class="origin-card" style="background: #F8FAFC; border-radius: 20px; padding: 60px; box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08); border-left: 5px solid #1B5E20;">
+                <div class="origin-icon" style="width: 80px; height: 80px; background: #1B5E20; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 40px; color: white; font-size: 36px;">
                     <i class="fas fa-lightbulb"></i>
                 </div>
 
-                <h3 style="color: #2E7D32; font-size: 28px; margin-bottom: 25px; text-align: center;">Origins in EPR Advocacy</h3>
+                <h3 style="color: #1B5E20; font-size: 28px; margin-bottom: 25px; text-align: center;">Origins in EPR Advocacy</h3>
 
                 <div class="origin-text" style="font-size: 18px; line-height: 1.8; color: #666666;">
                     <p style="margin-bottom: 25px;">
                         The establishment of the Dar es Salaam Waste Pickers Network (MTAWADA) originates from an advocacy project focused on implementing an <strong>Extended Producer Responsibility (EPR)</strong> scheme for plastic waste management in Tanzania.
                     </p>
 
-                    <div style="background: rgba(46, 125, 50, 0.1); padding: 25px; border-radius: 15px; margin: 30px 0; border-left: 4px solid #2E7D32;">
-                        <h4 style="color: #2E7D32; margin-bottom: 15px; font-size: 20px;">
+                    <div style="background: rgba(27, 94, 32, 0.1); padding: 25px; border-radius: 15px; margin: 30px 0; border-left: 4px solid #1B5E20;">
+                        <h4 style="color: #1B5E20; margin-bottom: 15px; font-size: 20px;">
                             <i class="fas fa-recycle" style="margin-right: 10px;"></i>
                             What is EPR?
                         </h4>
@@ -99,9 +99,9 @@
 <section class="history-timeline" style="padding: 100px 0; background: #F8FAFC;">
     <div class="container">
         <div class="section-header" style="text-align: center; margin-bottom: 60px;">
-            <h2 style="display: inline-block; position: relative; font-size: 42px; color: #2E7D32;">
+            <h2 style="display: inline-block; position: relative; font-size: 42px; color: #1B5E20;">
                 Our Timeline
-                <span style="position: absolute; bottom: -10px; left: 50%; transform: translateX(-50%); width: 80px; height: 4px; background: linear-gradient(to right, #2E7D32, #4CAF50); border-radius: 2px;"></span>
+                <span style="position: absolute; bottom: -10px; left: 50%; transform: translateX(-50%); width: 80px; height: 4px; background: linear-gradient(to right, #1B5E20, #2E7D32); border-radius: 2px;"></span>
             </h2>
             <p style="max-width: 800px; margin: 30px auto 0; font-size: 18px; color: #666666; line-height: 1.7;">
                 Key milestones in the formation and growth of MTAWADA
@@ -110,79 +110,79 @@
 
         <div class="timeline-container" style="position: relative; max-width: 1000px; margin: 0 auto;">
             <!-- Timeline Line -->
-            <div class="timeline-line" style="position: absolute; left: 50%; top: 0; bottom: 0; width: 3px; background: linear-gradient(to bottom, #2E7D32, #4CAF50, #FF9800); transform: translateX(-50%);"></div>
+            <div class="timeline-line" style="position: absolute; left: 50%; top: 0; bottom: 0; width: 3px; background: linear-gradient(to bottom, #1B5E20, #2E7D32, #4CAF50, #66BB6A); transform: translateX(-50%);"></div>
 
             <!-- Timeline Item 1 -->
             <div class="timeline-item" style="display: flex; justify-content: flex-end; margin-bottom: 80px; position: relative;">
-                <div class="timeline-content" style="width: 45%; padding: 40px; background: white; border-radius: 20px; box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1); border-right: 5px solid #2E7D32;">
-                    <div class="timeline-icon" style="width: 60px; height: 60px; background: #2E7D32; border-radius: 15px; display: flex; align-items: center; justify-content: center; color: white; font-size: 24px; margin-bottom: 20px;">
+                <div class="timeline-content" style="width: 45%; padding: 40px; background: white; border-radius: 20px; box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1); border-right: 5px solid #1B5E20;">
+                    <div class="timeline-icon" style="width: 60px; height: 60px; background: #1B5E20; border-radius: 15px; display: flex; align-items: center; justify-content: center; color: white; font-size: 24px; margin-bottom: 20px;">
                         <i class="fas fa-search"></i>
                     </div>
-                    <h3 style="color: #2E7D32; margin-bottom: 15px; font-size: 22px;">Research & Identification</h3>
+                    <h3 style="color: #1B5E20; margin-bottom: 15px; font-size: 22px;">Research & Identification</h3>
                     <p style="color: #666666; line-height: 1.7; margin-bottom: 20px;">
                         Field officers worked directly in the streets where waste pickers used to collect and sell recyclable materials and conducted the identification and registration process in consultation with neighbourhood (mtaa) government leaders.
                     </p>
                     <div class="timeline-details" style="display: flex; gap: 20px; flex-wrap: wrap;">
-                        <span style="display: flex; align-items: center; gap: 8px; color: #2E7D32; font-size: 14px;">
+                        <span style="display: flex; align-items: center; gap: 8px; color: #1B5E20; font-size: 14px;">
                             <i class="fas fa-map-marker-alt"></i> 5 Municipalities
                         </span>
-                        <span style="display: flex; align-items: center; gap: 8px; color: #2E7D32; font-size: 14px;">
+                        <span style="display: flex; align-items: center; gap: 8px; color: #1B5E20; font-size: 14px;">
                             <i class="fas fa-users"></i> Street-level Research
                         </span>
                     </div>
                 </div>
-                <div class="timeline-dot" style="position: absolute; left: 50%; top: 50%; width: 20px; height: 20px; background: #2E7D32; border-radius: 50%; transform: translate(-50%, -50%); border: 4px solid #F8FAFC; box-shadow: 0 0 0 3px #2E7D32;"></div>
-                <div class="timeline-date" style="position: absolute; left: calc(50% + 30px); top: 50%; transform: translateY(-50%); background: #2E7D32; color: white; padding: 8px 20px; border-radius: 20px; font-size: 14px; font-weight: 600; white-space: nowrap;">
+                <div class="timeline-dot" style="position: absolute; left: 50%; top: 50%; width: 20px; height: 20px; background: #1B5E20; border-radius: 50%; transform: translate(-50%, -50%); border: 4px solid #F8FAFC; box-shadow: 0 0 0 3px #1B5E20;"></div>
+                <div class="timeline-date" style="position: absolute; left: calc(50% + 30px); top: 50%; transform: translateY(-50%); background: #1B5E20; color: white; padding: 8px 20px; border-radius: 20px; font-size: 14px; font-weight: 600; white-space: nowrap;">
                     2023
                 </div>
             </div>
 
             <!-- Timeline Item 2 -->
             <div class="timeline-item" style="display: flex; justify-content: flex-start; margin-bottom: 80px; position: relative;">
-                <div class="timeline-content" style="width: 45%; padding: 40px; background: white; border-radius: 20px; box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1); border-left: 5px solid #4CAF50;">
-                    <div class="timeline-icon" style="width: 60px; height: 60px; background: #4CAF50; border-radius: 15px; display: flex; align-items: center; justify-content: center; color: white; font-size: 24px; margin-bottom: 20px;">
+                <div class="timeline-content" style="width: 45%; padding: 40px; background: white; border-radius: 20px; box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1); border-left: 5px solid #2E7D32;">
+                    <div class="timeline-icon" style="width: 60px; height: 60px; background: #2E7D32; border-radius: 15px; display: flex; align-items: center; justify-content: center; color: white; font-size: 24px; margin-bottom: 20px;">
                         <i class="fas fa-handshake"></i>
                     </div>
-                    <h3 style="color: #4CAF50; margin-bottom: 15px; font-size: 22px;">Collaborative Constitution Development</h3>
+                    <h3 style="color: #2E7D32; margin-bottom: 15px; font-size: 22px;">Collaborative Constitution Development</h3>
                     <p style="color: #666666; line-height: 1.7; margin-bottom: 20px;">
                         The network's constitution was drafted collaboratively by incorporating inputs from the waste pickers themselves through various exchange sessions that involved representatives of waste pickers around Dar es Salaam region.
                     </p>
                     <div class="timeline-details" style="display: flex; gap: 20px; flex-wrap: wrap;">
-                        <span style="display: flex; align-items: center; gap: 8px; color: #4CAF50; font-size: 14px;">
+                        <span style="display: flex; align-items: center; gap: 8px; color: #2E7D32; font-size: 14px;">
                             <i class="fas fa-file-contract"></i> Constitutional Drafting
                         </span>
-                        <span style="display: flex; align-items: center; gap: 8px; color: #4CAF50; font-size: 14px;">
+                        <span style="display: flex; align-items: center; gap: 8px; color: #2E7D32; font-size: 14px;">
                             <i class="fas fa-comments"></i> Exchange Sessions
                         </span>
                     </div>
                 </div>
-                <div class="timeline-dot" style="position: absolute; left: 50%; top: 50%; width: 20px; height: 20px; background: #4CAF50; border-radius: 50%; transform: translate(-50%, -50%); border: 4px solid #F8FAFC; box-shadow: 0 0 0 3px #4CAF50;"></div>
-                <div class="timeline-date" style="position: absolute; right: calc(50% + 30px); top: 50%; transform: translateY(-50%); background: #4CAF50; color: white; padding: 8px 20px; border-radius: 20px; font-size: 14px; font-weight: 600; white-space: nowrap;">
+                <div class="timeline-dot" style="position: absolute; left: 50%; top: 50%; width: 20px; height: 20px; background: #2E7D32; border-radius: 50%; transform: translate(-50%, -50%); border: 4px solid #F8FAFC; box-shadow: 0 0 0 3px #2E7D32;"></div>
+                <div class="timeline-date" style="position: absolute; right: calc(50% + 30px); top: 50%; transform: translateY(-50%); background: #2E7D32; color: white; padding: 8px 20px; border-radius: 20px; font-size: 14px; font-weight: 600; white-space: nowrap;">
                     Early 2024
                 </div>
             </div>
 
             <!-- Timeline Item 3 -->
             <div class="timeline-item" style="display: flex; justify-content: flex-end; position: relative;">
-                <div class="timeline-content" style="width: 45%; padding: 40px; background: white; border-radius: 20px; box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1); border-right: 5px solid #FF9800;">
-                    <div class="timeline-icon" style="width: 60px; height: 60px; background: #FF9800; border-radius: 15px; display: flex; align-items: center; justify-content: center; color: white; font-size: 24px; margin-bottom: 20px;">
+                <div class="timeline-content" style="width: 45%; padding: 40px; background: white; border-radius: 20px; box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1); border-right: 5px solid #4CAF50;">
+                    <div class="timeline-icon" style="width: 60px; height: 60px; background: #4CAF50; border-radius: 15px; display: flex; align-items: center; justify-content: center; color: white; font-size: 24px; margin-bottom: 20px;">
                         <i class="fas fa-award"></i>
                     </div>
-                    <h3 style="color: #FF9800; margin-bottom: 15px; font-size: 22px;">Official Registration</h3>
+                    <h3 style="color: #4CAF50; margin-bottom: 15px; font-size: 22px;">Official Registration</h3>
                     <p style="color: #666666; line-height: 1.7; margin-bottom: 20px;">
                         As a finale of these efforts, Mtandao wa Waokota Taka Rejeshi Dar es Salaam – MTAWADA (Dar es Salaam Waste Pickers Network) was officially registered in April 2024 with the Ministry of Home Affairs (MOHA) under The Societies Act (CAP.337 R.E.2002).
                     </p>
                     <div class="timeline-details" style="display: flex; gap: 20px; flex-wrap: wrap;">
-                        <span style="display: flex; align-items: center; gap: 8px; color: #FF9800; font-size: 14px;">
+                        <span style="display: flex; align-items: center; gap: 8px; color: #4CAF50; font-size: 14px;">
                             <i class="fas fa-certificate"></i> MOHA Registered
                         </span>
-                        <span style="display: flex; align-items: center; gap: 8px; color: #FF9800; font-size: 14px;">
+                        <span style="display: flex; align-items: center; gap: 8px; color: #4CAF50; font-size: 14px;">
                             <i class="fas fa-calendar-check"></i> April 2024
                         </span>
                     </div>
                 </div>
-                <div class="timeline-dot" style="position: absolute; left: 50%; top: 50%; width: 20px; height: 20px; background: #FF9800; border-radius: 50%; transform: translate(-50%, -50%); border: 4px solid #F8FAFC; box-shadow: 0 0 0 3px #FF9800;"></div>
-                <div class="timeline-date" style="position: absolute; left: calc(50% + 30px); top: 50%; transform: translateY(-50%); background: #FF9800; color: white; padding: 8px 20px; border-radius: 20px; font-size: 14px; font-weight: 600; white-space: nowrap;">
+                <div class="timeline-dot" style="position: absolute; left: 50%; top: 50%; width: 20px; height: 20px; background: #4CAF50; border-radius: 50%; transform: translate(-50%, -50%); border: 4px solid #F8FAFC; box-shadow: 0 0 0 3px #4CAF50;"></div>
+                <div class="timeline-date" style="position: absolute; left: calc(50% + 30px); top: 50%; transform: translateY(-50%); background: #4CAF50; color: white; padding: 8px 20px; border-radius: 20px; font-size: 14px; font-weight: 600; white-space: nowrap;">
                     April 2024
                 </div>
             </div>
@@ -194,9 +194,9 @@
 <section class="history-municipalities" style="padding: 100px 0; background: white;">
     <div class="container">
         <div class="section-header" style="text-align: center; margin-bottom: 60px;">
-            <h2 style="display: inline-block; position: relative; font-size: 42px; color: #2E7D32;">
+            <h2 style="display: inline-block; position: relative; font-size: 42px; color: #1B5E20;">
                 Municipalities We Cover
-                <span style="position: absolute; bottom: -10px; left: 50%; transform: translateX(-50%); width: 80px; height: 4px; background: linear-gradient(to right, #2E7D32, #4CAF50); border-radius: 2px;"></span>
+                <span style="position: absolute; bottom: -10px; left: 50%; transform: translateX(-50%); width: 80px; height: 4px; background: linear-gradient(to right, #1B5E20, #2E7D32); border-radius: 2px;"></span>
             </h2>
             <p style="max-width: 800px; margin: 30px auto 0; font-size: 18px; color: #666666; line-height: 1.7;">
                 Operating are uniformly conducted across all municipalities within Dar es Salaam. In all these Municipalities, we exercise grassroot membership activities for MTAWADA.
@@ -205,32 +205,32 @@
 
         <div class="municipal-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 25px;">
             <div class="municipal-card" style="background: #F8FAFC; border-radius: 20px; padding: 40px 30px; text-align: center; transition: all 0.3s ease; border: 2px solid transparent;">
-                <div class="municipal-icon" style="font-size: 48px; margin-bottom: 20px; color: #2E7D32;">🏙️</div>
-                <h3 style="color: #2E7D32; margin-bottom: 10px; font-size: 22px;">Ubungo</h3>
+                <div class="municipal-icon" style="font-size: 48px; margin-bottom: 20px; color: #1B5E20;">🏙️</div>
+                <h3 style="color: #1B5E20; margin-bottom: 10px; font-size: 22px;">Ubungo</h3>
                 <p style="color: #666666; font-size: 14px;">Northern hub of waste management innovation</p>
             </div>
 
             <div class="municipal-card" style="background: #F8FAFC; border-radius: 20px; padding: 40px 30px; text-align: center; transition: all 0.3s ease; border: 2px solid transparent;">
-                <div class="municipal-icon" style="font-size: 48px; margin-bottom: 20px; color: #4CAF50;">🌊</div>
-                <h3 style="color: #4CAF50; margin-bottom: 10px; font-size: 22px;">Temeke</h3>
+                <div class="municipal-icon" style="font-size: 48px; margin-bottom: 20px; color: #2E7D32;">🌊</div>
+                <h3 style="color: #2E7D32; margin-bottom: 10px; font-size: 22px;">Temeke</h3>
                 <p style="color: #666666; font-size: 14px;">Coastal waste management and recycling initiatives</p>
             </div>
 
             <div class="municipal-card" style="background: #F8FAFC; border-radius: 20px; padding: 40px 30px; text-align: center; transition: all 0.3s ease; border: 2px solid transparent;">
-                <div class="municipal-icon" style="font-size: 48px; margin-bottom: 20px; color: #2E7D32;">🏢</div>
-                <h3 style="color: #2E7D32; margin-bottom: 10px; font-size: 22px;">Kinondoni</h3>
+                <div class="municipal-icon" style="font-size: 48px; margin-bottom: 20px; color: #1B5E20;">🏢</div>
+                <h3 style="color: #1B5E20; margin-bottom: 10px; font-size: 22px;">Kinondoni</h3>
                 <p style="color: #666666; font-size: 14px;">Urban waste collection and community programs</p>
             </div>
 
             <div class="municipal-card" style="background: #F8FAFC; border-radius: 20px; padding: 40px 30px; text-align: center; transition: all 0.3s ease; border: 2px solid transparent;">
-                <div class="municipal-icon" style="font-size: 48px; margin-bottom: 20px; color: #4CAF50;">🎯</div>
-                <h3 style="color: #4CAF50; margin-bottom: 10px; font-size: 22px;">Ilala</h3>
+                <div class="municipal-icon" style="font-size: 48px; margin-bottom: 20px; color: #2E7D32;">🎯</div>
+                <h3 style="color: #2E7D32; margin-bottom: 10px; font-size: 22px;">Ilala</h3>
                 <p style="color: #666666; font-size: 14px;">Central advocacy and policy engagement</p>
             </div>
 
             <div class="municipal-card" style="background: #F8FAFC; border-radius: 20px; padding: 40px 30px; text-align: center; transition: all 0.3s ease; border: 2px solid transparent;">
-                <div class="municipal-icon" style="font-size: 48px; margin-bottom: 20px; color: #2E7D32;">🌉</div>
-                <h3 style="color: #2E7D32; margin-bottom: 10px; font-size: 22px;">Kigamboni</h3>
+                <div class="municipal-icon" style="font-size: 48px; margin-bottom: 20px; color: #1B5E20;">🌉</div>
+                <h3 style="color: #1B5E20; margin-bottom: 10px; font-size: 22px;">Kigamboni</h3>
                 <p style="color: #666666; font-size: 14px;">Cross-water environmental conservation efforts</p>
             </div>
         </div>
@@ -241,9 +241,9 @@
 <section class="history-structure" style="padding: 100px 0; background: #F8FAFC;">
     <div class="container">
         <div class="section-header" style="text-align: center; margin-bottom: 60px;">
-            <h2 style="display: inline-block; position: relative; font-size: 42px; color: #2E7D32;">
+            <h2 style="display: inline-block; position: relative; font-size: 42px; color: #1B5E20;">
                 Our Democratic Structure
-                <span style="position: absolute; bottom: -10px; left: 50%; transform: translateX(-50%); width: 80px; height: 4px; background: linear-gradient(to right, #2E7D32, #4CAF50); border-radius: 2px;"></span>
+                <span style="position: absolute; bottom: -10px; left: 50%; transform: translateX(-50%); width: 80px; height: 4px; background: linear-gradient(to right, #1B5E20, #2E7D32); border-radius: 2px;"></span>
             </h2>
             <p style="max-width: 800px; margin: 30px auto 0; font-size: 18px; color: #666666; line-height: 1.7;">
                 Organized from the grassroots with three levels of democratic decision-making
@@ -252,66 +252,66 @@
 
         <div class="structure-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-top: 50px;">
             <!-- Level 1 -->
-            <div class="structure-card" style="background: white; border-radius: 20px; padding: 40px; box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08); text-align: center; border-top: 5px solid #2E7D32;">
-                <div class="structure-icon" style="width: 80px; height: 80px; background: #2E7D32; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 30px; color: white; font-size: 36px;">
+            <div class="structure-card" style="background: white; border-radius: 20px; padding: 40px; box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08); text-align: center; border-top: 5px solid #1B5E20;">
+                <div class="structure-icon" style="width: 80px; height: 80px; background: #1B5E20; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 30px; color: white; font-size: 36px;">
                     <i class="fas fa-users"></i>
                 </div>
-                <div class="structure-level" style="font-size: 14px; color: #2E7D32; font-weight: 600; letter-spacing: 2px; margin-bottom: 15px; text-transform: uppercase;">
+                <div class="structure-level" style="font-size: 14px; color: #1B5E20; font-weight: 600; letter-spacing: 2px; margin-bottom: 15px; text-transform: uppercase;">
                     LEVEL 01
                 </div>
-                <h3 style="color: #2E7D32; margin-bottom: 20px; font-size: 22px;">Street Level Democracy</h3>
+                <h3 style="color: #1B5E20; margin-bottom: 20px; font-size: 22px;">Street Level Democracy</h3>
                 <p style="color: #666666; line-height: 1.7; margin-bottom: 25px;">
                     Members of MTAWADA participate in the general assembly as the highest decision-making body, exercising direct democracy at the street level.
                 </p>
                 <div class="structure-features">
-                    <span style="display: inline-block; background: rgba(46, 125, 50, 0.1); color: #2E7D32; padding: 8px 16px; border-radius: 20px; font-size: 12px; font-weight: 500; margin: 5px;">
+                    <span style="display: inline-block; background: rgba(27, 94, 32, 0.1); color: #1B5E20; padding: 8px 16px; border-radius: 20px; font-size: 12px; font-weight: 500; margin: 5px;">
                         <i class="fas fa-vote-yea"></i> Direct Voting
                     </span>
-                    <span style="display: inline-block; background: rgba(46, 125, 50, 0.1); color: #2E7D32; padding: 8px 16px; border-radius: 20px; font-size: 12px; font-weight: 500; margin: 5px;">
+                    <span style="display: inline-block; background: rgba(27, 94, 32, 0.1); color: #1B5E20; padding: 8px 16px; border-radius: 20px; font-size: 12px; font-weight: 500; margin: 5px;">
                         <i class="fas fa-hand-paper"></i> Community Led
                     </span>
                 </div>
             </div>
 
             <!-- Level 2 -->
-            <div class="structure-card" style="background: white; border-radius: 20px; padding: 40px; box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08); text-align: center; border-top: 5px solid #4CAF50;">
-                <div class="structure-icon" style="width: 80px; height: 80px; background: #4CAF50; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 30px; color: white; font-size: 36px;">
+            <div class="structure-card" style="background: white; border-radius: 20px; padding: 40px; box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08); text-align: center; border-top: 5px solid #2E7D32;">
+                <div class="structure-icon" style="width: 80px; height: 80px; background: #2E7D32; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 30px; color: white; font-size: 36px;">
                     <i class="fas fa-sitemap"></i>
                 </div>
-                <div class="structure-level" style="font-size: 14px; color: #4CAF50; font-weight: 600; letter-spacing: 2px; margin-bottom: 15px; text-transform: uppercase;">
+                <div class="structure-level" style="font-size: 14px; color: #2E7D32; font-weight: 600; letter-spacing: 2px; margin-bottom: 15px; text-transform: uppercase;">
                     LEVEL 02
                 </div>
-                <h3 style="color: #4CAF50; margin-bottom: 20px; font-size: 22px;">District Representation</h3>
+                <h3 style="color: #2E7D32; margin-bottom: 20px; font-size: 22px;">District Representation</h3>
                 <p style="color: #666666; line-height: 1.7; margin-bottom: 25px;">
                     The second, aggregated level composed of representatives from street levels (district delegates and chairpersons) coordinating activities across districts.
                 </p>
                 <div class="structure-features">
-                    <span style="display: inline-block; background: rgba(76, 175, 80, 0.1); color: #4CAF50; padding: 8px 16px; border-radius: 20px; font-size: 12px; font-weight: 500; margin: 5px;">
+                    <span style="display: inline-block; background: rgba(46, 125, 50, 0.1); color: #2E7D32; padding: 8px 16px; border-radius: 20px; font-size: 12px; font-weight: 500; margin: 5px;">
                         <i class="fas fa-user-tie"></i> Elected Delegates
                     </span>
-                    <span style="display: inline-block; background: rgba(76, 175, 80, 0.1); color: #4CAF50; padding: 8px 16px; border-radius: 20px; font-size: 12px; font-weight: 500; margin: 5px;">
+                    <span style="display: inline-block; background: rgba(46, 125, 50, 0.1); color: #2E7D32; padding: 8px 16px; border-radius: 20px; font-size: 12px; font-weight: 500; margin: 5px;">
                         <i class="fas fa-map-marked"></i> District Coordination
                     </span>
                 </div>
             </div>
 
             <!-- Level 3 -->
-            <div class="structure-card" style="background: white; border-radius: 20px; padding: 40px; box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08); text-align: center; border-top: 5px solid #FF9800;">
-                <div class="structure-icon" style="width: 80px; height: 80px; background: #FF9800; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 30px; color: white; font-size: 36px;">
+            <div class="structure-card" style="background: white; border-radius: 20px; padding: 40px; box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08); text-align: center; border-top: 5px solid #4CAF50;">
+                <div class="structure-icon" style="width: 80px; height: 80px; background: #4CAF50; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 30px; color: white; font-size: 36px;">
                     <i class="fas fa-handshake"></i>
                 </div>
-                <div class="structure-level" style="font-size: 14px; color: #FF9800; font-weight: 600; letter-spacing: 2px; margin-bottom: 15px; text-transform: uppercase;">
+                <div class="structure-level" style="font-size: 14px; color: #4CAF50; font-weight: 600; letter-spacing: 2px; margin-bottom: 15px; text-transform: uppercase;">
                     LEVEL 03
                 </div>
-                <h3 style="color: #FF9800; margin-bottom: 20px; font-size: 22px;">Regional Coordination</h3>
+                <h3 style="color: #4CAF50; margin-bottom: 20px; font-size: 22px;">Regional Coordination</h3>
                 <p style="color: #666666; line-height: 1.7; margin-bottom: 25px;">
                     Representatives from all five municipalities in Dar es Salaam meet at the regional level to develop strategies, share best practices, and advocate for policy changes.
                 </p>
                 <div class="structure-features">
-                    <span style="display: inline-block; background: rgba(255, 152, 0, 0.1); color: #FF9800; padding: 8px 16px; border-radius: 20px; font-size: 12px; font-weight: 500; margin: 5px;">
+                    <span style="display: inline-block; background: rgba(76, 175, 80, 0.1); color: #4CAF50; padding: 8px 16px; border-radius: 20px; font-size: 12px; font-weight: 500; margin: 5px;">
                         <i class="fas fa-city"></i> Municipal Representation
                     </span>
-                    <span style="display: inline-block; background: rgba(255, 152, 0, 0.1); color: #FF9800; padding: 8px 16px; border-radius: 20px; font-size: 12px; font-weight: 500; margin: 5px;">
+                    <span style="display: inline-block; background: rgba(76, 175, 80, 0.1); color: #4CAF50; padding: 8px 16px; border-radius: 20px; font-size: 12px; font-weight: 500; margin: 5px;">
                         <i class="fas fa-bullhorn"></i> Regional Advocacy
                     </span>
                 </div>
@@ -321,7 +321,7 @@
 </section>
 
 <!-- Call to Action -->
-<section class="history-cta" style="padding: 120px 0; background: linear-gradient(135deg, #2E7D32 0%, #4CAF50 100%); position: relative; overflow: hidden;">
+<section class="history-cta" style="padding: 120px 0; background: linear-gradient(135deg, #1B5E20 0%, #2E7D32 100%); position: relative; overflow: hidden;">
     <div class="floating-element" style="position: absolute; top: 20%; left: 5%; font-size: 60px; opacity: 0.1; color: white; animation: float 20s infinite ease-in-out;">📜</div>
     <div class="floating-element" style="position: absolute; bottom: 30%; right: 5%; font-size: 60px; opacity: 0.1; color: white; animation: float 25s infinite ease-in-out reverse;">🌱</div>
 
@@ -332,7 +332,7 @@
                 From grassroots beginnings to becoming a registered network, our journey continues. Join us as we write the next chapter in waste pickers' rights and environmental justice.
             </p>
             <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
-                <a href="{{route('mtawada.contact')}}" class="btn-primary" style="background: #FFC107; color: #333333; padding: 16px 40px; border-radius: 30px; text-decoration: none; font-weight: 600; display: inline-flex; align-items: center; gap: 12px; transition: all 0.3s; border: none;">
+                <a href="{{route('mtawada.contact')}}" class="btn-primary" style="background: #66BB6A; color: white; padding: 16px 40px; border-radius: 30px; text-decoration: none; font-weight: 600; display: inline-flex; align-items: center; gap: 12px; transition: all 0.3s; border: none;">
                     <i class="fas fa-user-plus"></i> Join Our Network
                 </a>
                 <a href="{{route('mtawada.contact')}}" class="btn-secondary" style="background: transparent; color: white; padding: 16px 40px; border-radius: 30px; text-decoration: none; font-weight: 600; border: 2px solid white; display: inline-flex; align-items: center; gap: 12px; transition: all 0.3s;">
@@ -388,7 +388,7 @@
     .municipal-card:hover {
         transform: translateY(-10px);
         box-shadow: 0 25px 50px rgba(0, 0, 0, 0.12) !important;
-        border-color: #2E7D32 !important;
+        border-color: #1B5E20 !important;
     }
 
     .structure-card:hover {
@@ -398,13 +398,13 @@
 
     .btn-primary:hover {
         transform: translateY(-3px) scale(1.05);
-        box-shadow: 0 12px 30px rgba(255, 193, 7, 0.4) !important;
-        background: #FFB300 !important;
+        box-shadow: 0 12px 30px rgba(102, 187, 106, 0.4) !important;
+        background: #4CAF50 !important;
     }
 
     .btn-secondary:hover {
         background: white !important;
-        color: #2E7D32 !important;
+        color: #1B5E20 !important;
         transform: translateY(-3px);
     }
 

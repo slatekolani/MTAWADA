@@ -42,7 +42,7 @@
 
 <section class="gallery-hero" style="margin-top: 90px; position: relative; overflow: hidden;">
     <div class="hero-bg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
-        <div class="bg-overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(rgba(46, 125, 50, 0.6), rgba(76, 175, 80, 0.5)); z-index: 1;"></div>
+        <div class="bg-overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(rgba(27, 94, 32, 0.6), rgba(46, 125, 50, 0.5)); z-index: 1;"></div>
         <div class="bg-image" style="position: absolute; top: 0; left: 0; width: 100%; height: 160%; background-image: url('/images/Education4.jpg'); background-size: cover; background-position: center; z-index: 0; animation: zoomEffect 20s infinite alternate;"></div>
     </div>
 
@@ -53,7 +53,7 @@
     <div class="container" style="position: relative; z-index: 3; min-height: 500px; display: flex; align-items: center;">
         <div class="hero-content" style="max-width: 800px; padding: 100px 0;">
             <h1 style="font-size: 56px; font-weight: 800; color: white; margin-bottom: 20px; line-height: 1.2; text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);">
-                Our <span style="color: #FFC107;">Visual</span> Journey
+                Our <span style="color: #66BB6A;">Visual</span> Journey
             </h1>
             <p style="font-size: 24px; color: rgba(255, 255, 255, 0.95); margin-bottom: 30px; line-height: 1.6;">
                 Capturing moments of transformation, community, and environmental impact
@@ -165,7 +165,7 @@
             <div class="photo-item" data-filter="education">
                 <div class="photo-card"
                      data-image="/images/Outside gathering.jpg"
-                     data-title="Safety & Rights Training Session"
+                     data-title="MTAWADA Exchange Session"
                      data-description="Educational workshop on occupational safety and workers' rights for waste pickers in Ilala municipality. Participants learn about protective equipment, handling hazardous materials, and their legal rights as informal sector workers."
                      data-date="July 5, 2024"
                      data-location="Ilala, Dar es Salaam">
@@ -188,7 +188,7 @@
             <div class="photo-item" data-filter="advocacy">
                 <div class="photo-card"
                      data-image="/images/Speaking 3.jpg"
-                     data-title="Advocacy Strategy Meeting"
+                     data-title="Annual General Meeting"
                      data-description="MTAWADA representatives meeting with local government officials in Kigamboni to discuss waste picker recognition and integration into formal waste management systems. These dialogues are crucial for policy change and sustainable solutions."
                      data-date="March 22, 2024"
                      data-location="Kigamboni, Dar es Salaam">
@@ -260,7 +260,7 @@
     right: 20px;
     width: 50px;
     height: 50px;
-    background: #2E7D32;
+    background: #1B5E20;
     color: white;
     border: none;
     border-radius: 50%;
@@ -274,7 +274,7 @@
 }
 
 .lightbox-close:hover {
-    background: #1B5E20;
+    background: #0D4A18;
     transform: rotate(90deg);
 }
 
@@ -284,7 +284,7 @@
     transform: translateY(-50%);
     width: 60px;
     height: 60px;
-    background: rgba(46, 125, 50, 0.9);
+    background: rgba(27, 94, 32, 0.9);
     color: white;
     border: none;
     border-radius: 50%;
@@ -298,7 +298,7 @@
 }
 
 .lightbox-nav:hover {
-    background: #1B5E20;
+    background: #0D4A18;
     transform: translateY(-50%) scale(1.1);
 }
 
@@ -337,7 +337,7 @@
 }
 
 .lightbox-info h3 {
-    color: #2E7D32;
+    color: #1B5E20;
     font-size: 28px;
     margin-bottom: 20px;
     font-weight: 700;
@@ -368,7 +368,7 @@
 }
 
 .meta-item i {
-    color: #2E7D32;
+    color: #1B5E20;
     width: 20px;
 }
 
@@ -384,7 +384,7 @@
 .filter-btn {
     background: white;
     border: 2px solid #E8F5E9;
-    color: #2E7D32;
+    color: #1B5E20;
     padding: 10px 25px;
     border-radius: 25px;
     font-weight: 600;
@@ -398,9 +398,9 @@
 }
 
 .filter-btn.active {
-    background: #2E7D32;
+    background: #1B5E20;
     color: white;
-    border-color: #2E7D32;
+    border-color: #1B5E20;
 }
 
 /* Enhanced Photo Grid */
@@ -450,9 +450,9 @@
     inset: 0;
     background: linear-gradient(
         to top,
-        rgba(46, 125, 50, 0.95) 0%,
-        rgba(46, 125, 50, 0.7) 30%,
-        rgba(46, 125, 50, 0.3) 70%,
+        rgba(27, 94, 32, 0.95) 0%,
+        rgba(27, 94, 32, 0.7) 30%,
+        rgba(27, 94, 32, 0.3) 70%,
         transparent 100%
     );
     opacity: 0;
@@ -485,7 +485,7 @@
     font-size: 40px;
     margin-bottom: 15px;
     display: block;
-    color: #FFC107;
+    color: #66BB6A;
 }
 
 .photo-item:not(.large) .photo-icon {
@@ -538,15 +538,15 @@
 }
 
 .photo-cta i {
-    color: #FFC107;
+    color: #66BB6A;
 }
 
 /* Hover Effects */
 .photo-card:hover {
     transform: translateY(-10px) scale(1.02);
     box-shadow:
-        0 25px 50px rgba(46, 125, 50, 0.2),
-        0 0 0 1px rgba(255, 193, 7, 0.2);
+        0 25px 50px rgba(27, 94, 32, 0.2),
+        0 0 0 1px rgba(102, 187, 106, 0.2);
 }
 
 /* Animations */
@@ -775,8 +775,8 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         {
             image: "/images/Scripting.jpg",
-            title: "Field Registration & Data Collection",
-            description: "Our team conducting field registration of waste pickers in Kinondoni municipality. This crucial data helps us advocate for formal recognition and better working conditions. Each registration brings us closer to comprehensive representation of waste pickers' needs.",
+            title: "Advocacy Session Using Media Outlets",
+            description: "Picture showing Wastepickers and Media representatives from TBC 1 (Tanzania Broadcast Company ). The session was conducted on February 28, 2025, at Kisiwani Street, Ubungo Municipality. The focus was to advocate for our sectoral rights while drawing attention to the significant difficulties that routinely impede our work. Specifically, the session aimed to sensitize the wider society to our integral contribution to environmental conservation and to clearly articulate the barriers that are slowing down the sector's advancement.",
             date: "May 20, 2024",
             location: "Kinondoni, Dar es Salaam",
             category: "advocacy"
@@ -791,8 +791,8 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         {
             image: "/images/Outside gathering.jpg",
-            title: "Safety & Rights Training Session",
-            description: "Educational workshop on occupational safety and workers' rights for waste pickers in Ilala municipality. Participants learn about protective equipment, handling hazardous materials, and their legal rights as informal sector workers.",
+            title: "MTAWADA Exchange Session",
+            description: "Following our formal registration in April 2024, we successfully hosted various exchange Session for our members. The core focus was on organization building and grassroots capacity enhancement. At this event, attendees gained essential skills and knowledge regarding MTAWADA's structure, objectives, and upcoming initiatives. Furthermore, the session addressed member rights and strategized on actionable plans to overcome current organizational challenges.",
             date: "July 5, 2024",
             location: "Ilala, Dar es Salaam",
             category: "education"
