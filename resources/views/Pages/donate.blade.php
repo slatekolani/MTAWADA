@@ -124,7 +124,7 @@
                                  Enter Custom Amount
                                 </label>
                                 <div style="display: flex; gap: 10px;">
-                                    <input type="number" id="custom-amount" name="amount" placeholder="Enter amount in TZS" required style="flex: 1; padding: 15px; border: 2px solid #ddd; border-radius: 10px; font-size: 16px; outline: none;">
+                                    <input type="number" id="custom-amount" name="amount" placeholder="Enter amount" required style="flex: 1; padding: 15px; border: 2px solid #ddd; border-radius: 10px; font-size: 16px; outline: none;">
                                     <select name="currency" style="padding: 15px; border: 2px solid #ddd; border-radius: 10px; font-size: 16px; outline: none; background: white;">
                                         <option value="TZS">TZS</option>
                                         <option value="USD">USD</option>

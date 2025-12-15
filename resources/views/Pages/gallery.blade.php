@@ -89,19 +89,19 @@
         <!-- Photo Grid -->
         <div class="photo-grid">
             <!-- Image 1: Community Clean-Up Day -->
-            <div class="photo-item large" data-filter="community">
+            <div class="photo-item large" data-filter="environment">
                 <div class="photo-card"
                      data-image="/images/Field work.jpg"
                      data-title="Community Clean-Up Day"
-                     data-description="Waste pickers and community members working together in Ubungo municipality to clean public spaces. This initiative not only improves the environment but also fosters community solidarity and recognition of waste pickers' essential role in urban cleanliness."
+                     data-description="Waste pickers perform their routine work at Bonde la Mpunga-Msasani, Kinondoni (representing the entire community of waste pickers), working in a fragile and hazardous environment with no or limited protective gear."
                      data-date="June 15, 2024"
-                     data-location="Ubungo, Dar es Salaam">
+                     data-location="Mpunga-Msasani, Konondoni">
                     <img src="/images/Field work.jpg" alt="Community Clean Up" loading="lazy">
                     <div class="photo-overlay">
                         <div class="photo-content">
                             <i class="fas fa-hands-helping photo-icon"></i>
-                            <h3 class="photo-title">Community Clean-Up Day</h3>
-                            <p class="photo-desc">Waste pickers and community members working together in Ubungo</p>
+                            <h3 class="photo-title">Our Working Environment</h3>
+                            <p class="photo-desc">Waste pickers perform their routine work at Bonde la Mpunga-Msasani, Kinondoni (representing the entire community of waste pickers), working in a fragile and hazardous environment with no or limited protective gear.</p>
                             <div class="photo-tags">
                                 <span class="tag">Community</span>
                                 <span class="tag">Environment</span>
@@ -141,17 +141,17 @@
             <!-- Image 3: Women Waste Pickers Meeting -->
             <div class="photo-item" data-filter="community">
                 <div class="photo-card"
-                     data-image="/images/Speaking4.jpg"
+                     data-image="/images/DSC_1182.JPG"
                      data-title="Women Waste Pickers Assembly"
-                     data-description="A gathering of women waste pickers in Temeke municipality discussing challenges and solutions. Women comprise over 40% of waste pickers in Dar es Salaam and face unique challenges. These meetings empower them to voice their concerns and contribute to collective decision-making."
-                     data-date="April 10, 2024"
-                     data-location="Temeke, Dar es Salaam">
-                    <img src="/images/Speaking4.jpg" alt="Women Waste Pickers Meeting" loading="lazy">
+                     data-description="Honorable Professor Kitila Mkumbo, a Minister of State Ministers of State in the President’s Office, Planning and Investment addressing Member of the Annual General Meeting held on 24 February 2025 at Amy-Garvey Hall Manzese-Ubungo. In this meeting, Professor Mkumbo attended as a guest of honor and he was successfully appointed by members to serve as the organization's guardian."
+                     data-date="February 24, 2025"
+                     data-location="Manzese, Ubungo">
+                    <img src="/images/DSC_1182.JPG" alt="Women Waste Pickers Meeting" loading="lazy">
                     <div class="photo-overlay">
                         <div class="photo-content">
                             <i class="fas fa-users photo-icon"></i>
                             <h4 class="photo-title">Women's Assembly</h4>
-                            <p class="photo-desc">Women waste pickers discussing their challenges</p>
+                            <p class="photo-desc">Honorable Professor Kitila Mkumbo, a Minister of State Ministers of State in the President’s Office, Planning and Investment addressing Member of the Annual General Meeting held on 24 February 2025 at Amy-Garvey Hall Manzese-Ubungo. In this meeting, Professor Mkumbo attended as a guest of honor and he was successfully appointed by members to serve as the organization's guardian.</p>
                             <div class="photo-tags">
                                 <span class="tag">Community</span>
                                 <span class="tag">Gender</span>
@@ -184,23 +184,125 @@
                 </div>
             </div>
 
+            <div class="photo-item" data-filter="education">
+                <div class="photo-card"
+                     data-image="/images/Seminar.jpg"
+                     data-title="Seminar and Training for MTAWADA Members"
+                     data-description="held on 6th September 2025, at Amy-Garvey Hall located at Manzese-Ubungo."
+                     data-date="September 6, 2025"
+                     data-location="Manzese, Ubungo">
+                    <img src="/images/Seminar.jpg" alt="Seminar & Training Session" loading="lazy">
+                    <div class="photo-overlay">
+                        <div class="photo-content">
+                            <i class="fas fa-graduation-cap photo-icon"></i>
+                            <h4 class="photo-title">Seminar and Training for MTAWADA Members</h4>
+                            <p class="photo-desc">held on 6th September 2025, at Amy-Garvey Hall located at Manzese-Ubungo</p>
+                            <div class="photo-tags">
+                                <span class="tag">Education</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="photo-item" data-filter="education">
+                <div class="photo-card"
+                     data-image="/images/Seminar 2.jpg"
+                     data-title="Seminar and Training for MTAWADA Members"
+                     data-description="held on 6th September 2025, at Amy-Garvey Hall located at Manzese-Ubungo."
+                     data-date="September 6, 2025"
+                     data-location="Manzese, Ubungo">
+                    <img src="/images/Seminar 2.jpg" alt="Seminar & Training Session" loading="lazy">
+                    <div class="photo-overlay">
+                        <div class="photo-content">
+                            <i class="fas fa-graduation-cap photo-icon"></i>
+                            <h4 class="photo-title">Seminar and Training for MTAWADA Members</h4>
+                            <p class="photo-desc">Held on 6th September 2025, at Amy-Garvey Hall located at Manzese-Ubungo</p>
+                            <div class="photo-tags">
+                                <span class="tag">Education</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="photo-item" data-filter="education">
+                <div class="photo-card"
+                     data-image="/images/Seminar 3.jpg"
+                     data-title="Seminar and Training for MTAWADA Members"
+                     data-description="held on 6th September 2025, at Amy-Garvey Hall located at Manzese-Ubungo."
+                     data-date="September 6, 2025"
+                     data-location="Manzese, Ubungo">
+                    <img src="/images/Seminar 3.jpg" alt="Seminar & Training Session" loading="lazy">
+                    <div class="photo-overlay">
+                        <div class="photo-content">
+                            <i class="fas fa-graduation-cap photo-icon"></i>
+                            <h4 class="photo-title">Seminar and Training for MTAWADA Members</h4>
+                            <p class="photo-desc">held on 6th September 2025, at Amy-Garvey Hall located at Manzese-Ubungo</p>
+                            <div class="photo-tags">
+                                <span class="tag">Education</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <!-- Image 5: Advocacy Meeting -->
             <div class="photo-item" data-filter="advocacy">
                 <div class="photo-card"
                      data-image="/images/Speaking 3.jpg"
                      data-title="Annual General Meeting"
-                     data-description="MTAWADA representatives meeting with local government officials in Kigamboni to discuss waste picker recognition and integration into formal waste management systems. These dialogues are crucial for policy change and sustainable solutions."
-                     data-date="March 22, 2024"
-                     data-location="Kigamboni, Dar es Salaam">
+                     data-description="Member of the Annual General Meeting for MTAWADA contributing for agenda during meeting held at Amy-Garvey Hall Manzese-Ubungo on 24 February 2025."
+                     data-date="February 24, 2025"
+                     data-location="Manzese, Ubungo">
                     <img src="/images/Speaking 3.jpg" alt="Advocacy Meeting" loading="lazy">
                     <div class="photo-overlay">
                         <div class="photo-content">
                             <i class="fas fa-handshake photo-icon"></i>
                             <h4 class="photo-title">Advocacy Meeting</h4>
-                            <p class="photo-desc">Dialogues with local government officials</p>
+                            <p class="photo-desc">Member of the Annual General Meeting for MTAWADA contributing for agenda during meeting held at Amy-Garvey Hall Manzese-Ubungo on 24 February 2025.</p>
                             <div class="photo-tags">
                                 <span class="tag">Advocacy</span>
                                 <span class="tag">Policy</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="photo-item" data-filter="education">
+                <div class="photo-card"
+                     data-image="/images/Trainings.jpg"
+                     data-title="Seminar and Training for Local Government Leaders"
+                     data-description="Seminar and Training for MTAWADA Members held on 21 September 2025 at Amy-Garvey Hall Manzese-Ubungo. Members successfully exchanged knowledge to excel day-to-day organization's activities and addressed different matters faced.."
+                     data-date="September 21, 2025"
+                     data-location="Manzese, Ubungo">
+                    <img src="/images/Trainings.jpg" alt="Training Meeting" loading="lazy">
+                    <div class="photo-overlay">
+                        <div class="photo-content">
+                            <i class="fas fa-handshake photo-icon"></i>
+                            <h4 class="photo-title">Seminar and Training for Local Government Leaders</h4>
+                            <p class="photo-desc">Seminar and Training for MTAWADA Members held on 21 September 2025 at Amy-Garvey Hall Manzese-Ubungo. Members successfully exchanged knowledge to excel day-to-day organization's activities and addressed different matters faced.</p>
+                            <div class="photo-tags">
+                                <span class="tag">Trainings</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="photo-item" data-filter="education">
+                <div class="photo-card"
+                     data-image="/images/Trainings 2.jpg"
+                     data-title="Seminar and Training for Local Government Leaders"
+                     data-description="Seminar and Training for MTAWADA Members held on 21 September 2025 at Amy-Garvey Hall Manzese-Ubungo. Members successfully exchanged knowledge to excel day-to-day organization's activities and addressed different matters faced.."
+                     data-date="September 21, 2025"
+                     data-location="Manzese, Ubungo">
+                    <img src="/images/Trainings.jpg" alt="Training Meeting" loading="lazy">
+                    <div class="photo-overlay">
+                        <div class="photo-content">
+                            <i class="fas fa-handshake photo-icon"></i>
+                            <h4 class="photo-title">Seminar and Training for Local Government Leaders</h4>
+                            <p class="photo-desc">Seminar and Training for MTAWADA Members held on 21 September 2025 at Amy-Garvey Hall Manzese-Ubungo. Members successfully exchanged knowledge to excel day-to-day organization's activities and addressed different matters faced.</p>
+                            <div class="photo-tags">
+                                <span class="tag">Trainings</span>
                             </div>
                         </div>
                     </div>
@@ -767,11 +869,11 @@ document.addEventListener('DOMContentLoaded', function() {
     const galleryData = [
         {
             image: "/images/Field work.jpg",
-            title: "Community Clean-Up Day",
-            description: "Waste pickers and community members working together in Ubungo municipality to clean public spaces. This initiative not only improves the environment but also fosters community solidarity and recognition of waste pickers' essential role in urban cleanliness.",
+            title: "Our Working Environment",
+            description: "Waste pickers perform their routine work at Bonde la Mpunga-Msasani, Kinondoni (representing the entire community of waste pickers), working in a fragile and hazardous environment with no or limited protective gear.",
             date: "June 15, 2024",
-            location: "Ubungo, Dar es Salaam",
-            category: "community"
+            location: "Mpunga-Msasani, Kinondoni",
+            category: "environment"
         },
         {
             image: "/images/Scripting.jpg",
@@ -782,10 +884,10 @@ document.addEventListener('DOMContentLoaded', function() {
             category: "advocacy"
         },
         {
-            image: "/images/Speaking4.jpg",
+            image: "/images/DSC_1182.JPG",
             title: "Women Waste Pickers Assembly",
-            description: "A gathering of women waste pickers in Temeke municipality discussing challenges and solutions. Women comprise over 40% of waste pickers in Dar es Salaam and face unique challenges. These meetings empower them to voice their concerns and contribute to collective decision-making.",
-            date: "April 10, 2024",
+            description: "Honorable Professor Kitila Mkumbo, a Minister of State Ministers of State in the Presidents Office, Planning and Investment addressing Member of the Annual General Meeting held on 24 February 2025 at Amy-Garvey Hall Manzese-Ubungo. In this meeting, Professor Mkumbo attended as a guest of honor and he was successfully appointed by members to serve as the organizations guardian.",
+            date: "February 24, 2025",
             location: "Temeke, Dar es Salaam",
             category: "community"
         },
@@ -793,18 +895,60 @@ document.addEventListener('DOMContentLoaded', function() {
             image: "/images/Outside gathering.jpg",
             title: "MTAWADA Exchange Session",
             description: "Following our formal registration in April 2024, we successfully hosted various exchange Session for our members. The core focus was on organization building and grassroots capacity enhancement. At this event, attendees gained essential skills and knowledge regarding MTAWADA's structure, objectives, and upcoming initiatives. Furthermore, the session addressed member rights and strategized on actionable plans to overcome current organizational challenges.",
-            date: "July 5, 2024",
+            date: "April, 2024",
             location: "Ilala, Dar es Salaam",
+            category: "education"
+        },
+        {
+            image: "/images/Seminar.jpg",
+            title: "Seminar and Training for MTAWADA Members",
+            description: "held on 6th September 2025, at Amy-Garvey Hall located at Manzese-Ubungo.",
+            date: "September 6, 2025",
+            location: "Manzese, Ubungo",
+            category: "education"
+        },
+        {
+            image: "/images/Seminar 2.jpg",
+            title: "Seminar and Training for MTAWADA Members",
+            description: "held on 6th September 2025, at Amy-Garvey Hall located at Manzese-Ubungo.",
+            date: "September 6, 2025",
+            location: "Manzese, Ubungo",
+            category: "education"
+        },
+        {
+            image: "/images/Seminar 3.jpg",
+            title: "Seminar and Training for MTAWADA Members",
+            description: "Held on 6th September 2025, at Amy-Garvey Hall located at Manzese-Ubungo.",
+            date: "September 6, 2025",
+            location: "Manzese, Ubungo",
             category: "education"
         },
         {
             image: "/images/Speaking 3.jpg",
             title: "Advocacy Strategy Meeting",
-            description: "MTAWADA representatives meeting with local government officials in Kigamboni to discuss waste picker recognition and integration into formal waste management systems. These dialogues are crucial for policy change and sustainable solutions.",
-            date: "March 22, 2024",
-            location: "Kigamboni, Dar es Salaam",
+            description: "Member of the Annual General Meeting for MTAWADA contributing for agenda during meeting held at Amy-Garvey Hall Manzese-Ubungo on 24 February 2025.",
+            date: "February 24, 2025",
+            location: "Manzese, Ubungo",
             category: "advocacy"
-        }
+        },
+        {
+            image: "/images/Trainings.jpg",
+            title: "Seminar and Training for Local Government Leaders",
+            description: "Seminar and Training for MTAWADA Members held on 21 September 2025 at Amy-Garvey Hall Manzese-Ubungo. Members successfully exchanged knowledge to excel day-to-day organization's activities and addressed different matters faced.",
+            date: "September 21, 2025",
+            location: "Manzese-Ubungo",
+            category: "education"
+        },
+        {
+            image: "/images/Trainings 2.jpg",
+            title: "Seminar and Training for Local Government Leaders",
+            description: "Seminar and Training for MTAWADA Members held on 21 September 2025 at Amy-Garvey Hall Manzese-Ubungo. Members successfully exchanged knowledge to excel day-to-day organization's activities and addressed different matters faced.",
+            date: "September 21, 2025",
+            location: "Manzese-Ubungo",
+            category: "education"
+        },
+
+
     ];
 
     // Lightbox Elements

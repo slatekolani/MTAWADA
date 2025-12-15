@@ -253,26 +253,23 @@
                     <div class="social-section">
                         <h5 class="social-title" style="color: white;">Follow Our Journey</h5>
                         <div class="social-links">
-                            <a href="#" class="social-link facebook" aria-label="Facebook" style="background: rgba(255, 255, 255, 0.2); color: white;">
+                            <a href="https://www.facebook.com/share/1AeuNwV5Sw/" class="social-link facebook" aria-label="Facebook" style="background: rgba(255, 255, 255, 0.2); color: white;">
                                 <i class="fab fa-facebook-f"></i>
                                 <span class="social-tooltip">Facebook</span>
                             </a>
-                            <a href="#" class="social-link twitter" aria-label="Twitter" style="background: rgba(255, 255, 255, 0.2); color: white;">
+                            <a href="https://x.com/Mtawada_tz" class="social-link x" aria-label="Twitter" style="background: rgba(255, 255, 255, 0.2); color: white;">
                                 <i class="fab fa-twitter"></i>
-                                <span class="social-tooltip">Twitter</span>
+                                <span class="social-tooltip">X</span>
                             </a>
-                            <a href="#" class="social-link instagram" aria-label="Instagram" style="background: rgba(255, 255, 255, 0.2); color: white;">
+                            <a href="https://www.instagram.com/mtawada_tz?igsh=MTYwaWhjdHQ3ajZuYQ==" class="social-link instagram" aria-label="Instagram" style="background: rgba(255, 255, 255, 0.2); color: white;">
                                 <i class="fab fa-instagram"></i>
                                 <span class="social-tooltip">Instagram</span>
                             </a>
-                            <a href="#" class="social-link youtube" aria-label="YouTube" style="background: rgba(255, 255, 255, 0.2); color: white;">
+                            <a href="https://www.youtube.com/@MTAWADA_tz" class="social-link youtube" aria-label="YouTube" style="background: rgba(255, 255, 255, 0.2); color: white;">
                                 <i class="fab fa-youtube"></i>
                                 <span class="social-tooltip">YouTube</span>
                             </a>
-                            <a href="#" class="social-link linkedin" aria-label="LinkedIn" style="background: rgba(255, 255, 255, 0.2); color: white;">
-                                <i class="fab fa-linkedin-in"></i>
-                                <span class="social-tooltip">LinkedIn</span>
-                            </a>
+
                         </div>
                     </div>
                 </div>
