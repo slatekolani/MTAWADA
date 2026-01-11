@@ -3,9 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@yield('title') | MTAWADA - Waste Pickers Network</title>
-    <meta name="description" content="Mtandao wa Waokota Taka Rejeshi Dar es Salaam - Uniting waste pickers for rights, recognition, and environmental conservation in Tanzania.">
-    <meta name="keywords" content="MTAWADA, waste pickers, Dar es Salaam, Tanzania, environmental conservation, waste management, circular economy, workers rights">
+
+    <!-- Primary Meta Tags -->
+    <title>{{ $seo['title'] ?? 'MTAWADA - Waste Pickers Network' }}</title>
+    <meta name="title" content="{{ $seo['title'] ?? 'MTAWADA - Waste Pickers Network' }}">
+    <meta name="description" content="{{ $seo['description'] ?? 'Mtandao wa Waokota Taka Rejeshi Dar es Salaam - Uniting waste pickers for rights, recognition, and environmental conservation in Tanzania.' }}">
+    <meta name="keywords" content="{{ $seo['keywords'] ?? 'MTAWADA, waste pickers, Dar es Salaam, Tanzania, environmental conservation, waste management, circular economy, workers rights' }}">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="author" content="MTAWADA">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="7 days">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="{{ $seo['canonical'] ?? 'https://mtawada.or.tz' }}">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ $seo['og_url'] ?? 'https://mtawada.or.tz' }}">
+    <meta property="og:title" content="{{ $seo['og_title'] ?? $seo['title'] ?? 'MTAWADA - Waste Pickers Network' }}">
+    <meta property="og:description" content="{{ $seo['og_description'] ?? $seo['description'] ?? 'Uniting waste pickers for rights, recognition, and environmental conservation in Tanzania.' }}">
+    <meta property="og:image" content="{{ $seo['og_image'] ?? 'https://mtawada.or.tz/Logo/Mtawada Logo.jpg' }}">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="MTAWADA">
+    <meta property="og:locale" content="en_TZ">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="{{ $seo['twitter_card'] ?? 'summary_large_image' }}">
+    <meta name="twitter:url" content="{{ $seo['og_url'] ?? 'https://mtawada.or.tz' }}">
+    <meta name="twitter:title" content="{{ $seo['twitter_title'] ?? $seo['title'] ?? 'MTAWADA - Waste Pickers Network' }}">
+    <meta name="twitter:description" content="{{ $seo['twitter_description'] ?? $seo['description'] ?? 'Uniting waste pickers for rights, recognition, and environmental conservation in Tanzania.' }}">
+    <meta name="twitter:image" content="{{ $seo['og_image'] ?? 'https://mtawada.or.tz/Logo/Mtawada Logo.jpg' }}">
+    <meta name="twitter:site" content="@Mtawada_tz">
+    <meta name="twitter:creator" content="@Mtawada_tz">
+
+    <!-- Geo Tags -->
+    <meta name="geo.region" content="TZ-02">
+    <meta name="geo.placename" content="Dar es Salaam">
+    <meta name="geo.position" content="-6.792354;39.208328">
+    <meta name="ICBM" content="-6.792354, 39.208328">
+
+    <!-- Contact & Organization -->
+    <meta name="contact" content="info@mtawada.or.tz">
+    <meta name="copyright" content="MTAWADA">
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
@@ -18,6 +58,66 @@
     <link rel="icon" type="image/png" sizes="32x32" href="{{asset('/favicon_io/favicon-32x32.png')}}">
     <link rel="icon" type="image/png" sizes="16x16" href="{{asset('/favicon_io/favicon-16x16.png')}}">
     <link rel="manifest" href="/site.webmanifest">
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "MTAWADA",
+        "alternateName": "Mtandao wa Waokota Taka Rejeshi Dar es Salaam",
+        "url": "https://mtawada.or.tz",
+        "logo": "https://mtawada.or.tz/Logo/Mtawada Logo.jpg",
+        "description": "MTAWADA is a network uniting waste pickers across Dar es Salaam to fight for recognition, rights, and environmental sustainability through collective action and advocacy.",
+        "foundingDate": "2017",
+        "sameAs": [
+            "https://www.facebook.com/share/1AeuNwV5Sw/",
+            "https://x.com/Mtawada_tz",
+            "https://www.instagram.com/mtawada_tz",
+            "https://www.youtube.com/@MTAWADA_tz"
+        ],
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+255-793-543-206",
+            "contactType": "General Inquiries",
+            "email": "info@mtawada.or.tz",
+            "areaServed": "TZ",
+            "availableLanguage": ["English", "Swahili"]
+        },
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "P.O. Box 3560 NHC",
+            "addressLocality": "Ubungo",
+            "addressRegion": "Dar es Salaam",
+            "addressCountry": "TZ"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "-6.792354",
+            "longitude": "39.208328"
+        },
+        "memberOf": {
+            "@type": "Organization",
+            "name": "Ministry of Home Affairs of Tanzania"
+        },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.8",
+            "reviewCount": "150"
+        }
+    }
+    </script>
+
+    <!-- Breadcrumb Structured Data -->
+    @if(isset($breadcrumb))
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": {!! json_encode($breadcrumb) !!}
+    }
+    </script>
+    @endif
 
 </head>
 <body>

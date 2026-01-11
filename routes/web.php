@@ -14,8 +14,20 @@ use App\Http\Controllers\MTAWADAController;
 */
 
 Route::get('/', function () {
-    return view('Pages.home');
+    $seo = App\Helpers\SEOHelper::generateMetaTags('home');
+    $breadcrumb = [
+        [
+            "@type" => "ListItem",
+            "position" => 1,
+            "name" => "Home",
+            "item" => "https://mtawada.or.tz"
+        ]
+    ];
+    return view('Pages.home', compact('seo', 'breadcrumb'));
 });
+
+// Sitemap
+Route::get('/sitemap.xml', [App\Http\Controllers\SitemapController::class, 'index']);
 
 Route::prefix('mtawada')->group(function () {
     Route::get('/home', [App\Http\Controllers\MTAWADAController::class, 'home'])->name('mtawada.home');
