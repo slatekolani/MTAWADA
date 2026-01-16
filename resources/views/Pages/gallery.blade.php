@@ -95,7 +95,7 @@
                      data-title="Community Clean-Up Day"
                      data-description="Waste pickers perform their routine work at Bonde la Mpunga-Msasani, Kinondoni (representing the entire community of waste pickers), working in a fragile and hazardous environment with no or limited protective gear."
                      data-date="June 15, 2024"
-                     data-location="Mpunga-Msasani, Konondoni">
+                     data-location="Bonde la Mpunga-Msasani, Konondoni">
                     <img src="/images/Field work.jpg" alt="Community Clean Up" loading="lazy">
                     <div class="photo-overlay">
                         <div class="photo-content">
@@ -138,20 +138,20 @@
                 </div>
             </div>
 
-            <!-- Image 3: Women Waste Pickers Meeting -->
+            <!-- Image 3: Annual General Meeting (AGM) -->
             <div class="photo-item" data-filter="community">
                 <div class="photo-card"
                      data-image="/images/DSC_1182.JPG"
-                     data-title="Women Waste Pickers Assembly"
-                     data-description="Honorable Professor Kitila Mkumbo, a Minister of State Ministers of State in the President’s Office, Planning and Investment addressing Member of the Annual General Meeting held on 24 February 2025 at Amy-Garvey Hall Manzese-Ubungo. In this meeting, Professor Mkumbo attended as a guest of honor and he was successfully appointed by members to serve as the organization's guardian."
+                     data-title="Annual General Meeting (AGM)"
+                     data-description="Honorable Professor Kitila Mkumbo, a Minister of State in the President’s Office, Planning and Investment addressing Member of the Annual General Meeting held on 24 February 2025 at Amy-Garvey Hall Manzese-Ubungo. In this meeting, Professor Mkumbo attended as a guest of honor and he was successfully appointed by members to serve as the organization's guardian."
                      data-date="February 24, 2025"
                      data-location="Manzese, Ubungo">
-                    <img src="/images/DSC_1182.JPG" alt="Women Waste Pickers Meeting" loading="lazy">
+                    <img src="/images/DSC_1182.JPG" alt="Annual General Meeting (AGM)" loading="lazy">
                     <div class="photo-overlay">
                         <div class="photo-content">
                             <i class="fas fa-users photo-icon"></i>
-                            <h4 class="photo-title">Women's Assembly</h4>
-                            <p class="photo-desc">Honorable Professor Kitila Mkumbo, a Minister of State Ministers of State in the President’s Office, Planning and Investment addressing Member of the Annual General Meeting held on 24 February 2025 at Amy-Garvey Hall Manzese-Ubungo. In this meeting, Professor Mkumbo attended as a guest of honor and he was successfully appointed by members to serve as the organization's guardian.</p>
+                            <h4 class="photo-title">Annual General Meeting (AGM)</h4>
+                            <p class="photo-desc">Honorable Professor Kitila Mkumbo, a Minister of State in the President’s Office, Planning and Investment addressing Member of the Annual General Meeting held on 24 February 2025 at Amy-Garvey Hall Manzese-Ubungo. In this meeting, Professor Mkumbo attended as a guest of honor and he was successfully appointed by members to serve as the organization's guardian.</p>
                             <div class="photo-tags">
                                 <span class="tag">Community</span>
                                 <span class="tag">Gender</span>
@@ -268,6 +268,28 @@
                     </div>
                 </div>
             </div>
+
+            <div class="photo-item" data-filter="advocacy">
+                <div class="photo-card"
+                     data-image="/images/Kitila.jpeg"
+                     data-title="Stakeholder Engagement and EPR Advocacy"
+                     data-description="The Regional Vice Chairperson for MTAWADA, Sahir Mohamed Sahir (left), and MTAWADA Board Member, Advocate Christina Mfanga (right), represented the organization at a high-level stakeholder meeting convened at the Visano Hotel in Dodoma, Tanzania on 30 January 2025. The meeting focused on the critical review and formal adoption of the Extended Producer Responsibility (EPR) Report for Tanzania, finalized for submission to the Vice President’s Office. Strictly believing that the EPR framework is fundamentally the most viable pathway for securing formal recognition and sustainable livelihoods for waste pickers nationwide. Once fully operationalized, this system will mandate a structured environment that ensures fair compensation, enhanced occupational safety, and the integration of frontline environmental workers into the formal waste management sector. Through this strategic engagement, MTAWADA continues to champion the inclusion of waste pickers within the national circular economy, ensuring that grassroots perspectives directly inform high-level government policy-making."
+                     data-date="January 30, 2025"
+                     data-location="Manzese, Ubungo">
+                    <img src="/images/Kitila.jpeg" alt="Stakeholder Engagement and EPR Advocacy" loading="lazy">
+                    <div class="photo-overlay">
+                        <div class="photo-content">
+                            <i class="fas fa-handshake photo-icon"></i>
+                            <h4 class="photo-title">Stakeholder Engagement and EPR Advocacy</h4>
+                            <p class="photo-desc">The Regional Vice Chairperson for MTAWADA, Sahir Mohamed Sahir (left), and MTAWADA Board Member, Advocate Christina Mfanga (right), represented the organization at a high-level stakeholder meeting convened at the Visano Hotel in Dodoma, Tanzania on 30 January 2025.</p>
+                            <div class="photo-tags">
+                                <span class="tag">Advocacy</span>
+                                <span class="tag">Policy</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="photo-item" data-filter="education">
                 <div class="photo-card"
                      data-image="/images/Trainings.jpg"
@@ -288,26 +310,7 @@
                     </div>
                 </div>
             </div>
-            <div class="photo-item" data-filter="education">
-                <div class="photo-card"
-                     data-image="/images/Trainings 2.jpg"
-                     data-title="Seminar and Training for Local Government Leaders"
-                     data-description="Seminar and Training for MTAWADA Members held on 21 September 2025 at Amy-Garvey Hall Manzese-Ubungo. Members successfully exchanged knowledge to excel day-to-day organization's activities and addressed different matters faced.."
-                     data-date="September 21, 2025"
-                     data-location="Manzese, Ubungo">
-                    <img src="/images/Trainings.jpg" alt="Training Meeting" loading="lazy">
-                    <div class="photo-overlay">
-                        <div class="photo-content">
-                            <i class="fas fa-handshake photo-icon"></i>
-                            <h4 class="photo-title">Seminar and Training for Local Government Leaders</h4>
-                            <p class="photo-desc">Seminar and Training for MTAWADA Members held on 21 September 2025 at Amy-Garvey Hall Manzese-Ubungo. Members successfully exchanged knowledge to excel day-to-day organization's activities and addressed different matters faced.</p>
-                            <div class="photo-tags">
-                                <span class="tag">Trainings</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
         </div>
     </div>
 </section>
@@ -872,23 +875,23 @@ document.addEventListener('DOMContentLoaded', function() {
             title: "Our Working Environment",
             description: "Waste pickers perform their routine work at Bonde la Mpunga-Msasani, Kinondoni (representing the entire community of waste pickers), working in a fragile and hazardous environment with no or limited protective gear.",
             date: "June 15, 2024",
-            location: "Mpunga-Msasani, Kinondoni",
+            location: "Bonde la Mpunga-Msasani, Kinondoni",
             category: "environment"
         },
         {
             image: "/images/Scripting.jpg",
             title: "Advocacy Session Using Media Outlets",
             description: "Picture showing Wastepickers and Media representatives from TBC 1 (Tanzania Broadcast Company ). The session was conducted on February 28, 2025, at Kisiwani Street, Ubungo Municipality. The focus was to advocate for our sectoral rights while drawing attention to the significant difficulties that routinely impede our work. Specifically, the session aimed to sensitize the wider society to our integral contribution to environmental conservation and to clearly articulate the barriers that are slowing down the sector's advancement.",
-            date: "May 20, 2024",
-            location: "Kinondoni, Dar es Salaam",
+            date: "February 28, 2025",
+            location: "Kisiwani Street, Ubungo",
             category: "advocacy"
         },
         {
             image: "/images/DSC_1182.JPG",
-            title: "Women Waste Pickers Assembly",
-            description: "Honorable Professor Kitila Mkumbo, a Minister of State Ministers of State in the Presidents Office, Planning and Investment addressing Member of the Annual General Meeting held on 24 February 2025 at Amy-Garvey Hall Manzese-Ubungo. In this meeting, Professor Mkumbo attended as a guest of honor and he was successfully appointed by members to serve as the organizations guardian.",
+            title: "Annual General Meeting (AGM)",
+            description: "Honorable Professor Kitila Mkumbo, a Minister of State in the Presidents Office, Planning and Investment addressing Member of the Annual General Meeting held on 24 February 2025 at Amy-Garvey Hall Manzese-Ubungo. In this meeting, Professor Mkumbo attended as a guest of honor and he was successfully appointed by members to serve as the organizations guardian.",
             date: "February 24, 2025",
-            location: "Temeke, Dar es Salaam",
+            location: "Ubungo, Dar es Salaam",
             category: "community"
         },
         {
@@ -896,7 +899,7 @@ document.addEventListener('DOMContentLoaded', function() {
             title: "MTAWADA Exchange Session",
             description: "Following our formal registration in April 2024, we successfully hosted various exchange Session for our members. The core focus was on organization building and grassroots capacity enhancement. At this event, attendees gained essential skills and knowledge regarding MTAWADA's structure, objectives, and upcoming initiatives. Furthermore, the session addressed member rights and strategized on actionable plans to overcome current organizational challenges.",
             date: "April, 2024",
-            location: "Ilala, Dar es Salaam",
+            location: "Ubungo, Dar es Salaam",
             category: "education"
         },
         {
@@ -932,9 +935,18 @@ document.addEventListener('DOMContentLoaded', function() {
             category: "advocacy"
         },
         {
+            image: "/images/Kitila.jpeg",
+            title: "Stakeholder Engagement and EPR Advocacy",
+            description: "The Regional Vice Chairperson for MTAWADA, Sahir Mohamed Sahir (left), and MTAWADA Board Member, Advocate Christina Mfanga (right), represented the organization at a high-level stakeholder meeting convened at the Visano Hotel in Dodoma, Tanzania on 30 January 2025. The meeting focused on the critical review and formal adoption of the Extended Producer Responsibility (EPR) Report for Tanzania, finalized for submission to the Vice Presidents Office. Strictly believing that the EPR framework is fundamentally the most viable pathway for securing formal recognition and sustainable livelihoods for waste pickers nationwide. Once fully operationalized, this system will mandate a structured environment that ensures fair compensation, enhanced occupational safety, and the integration of frontline environmental workers into the formal waste management sector. Through this strategic engagement, MTAWADA continues to champion the inclusion of waste pickers within the national circular economy, ensuring that grassroots perspectives directly inform high-level government policy-making.",
+            date: "January 30, 2025",
+            location: "Manzese, Ubungo",
+            category: "advocacy"
+
+        },
+        {
             image: "/images/Trainings.jpg",
             title: "Seminar and Training for Local Government Leaders",
-            description: "Seminar and Training for MTAWADA Members held on 21 September 2025 at Amy-Garvey Hall Manzese-Ubungo. Members successfully exchanged knowledge to excel day-to-day organization's activities and addressed different matters faced.",
+            description: "The seminar and training for MTAWADA members was held on 21st September 2025, at Amy-Garvey Hall, located in Manzese, Ubungo, Dar es Salaam. The primary objective of the seminar was to empower members to enhance their professional skills and solidify their understanding of the organization's goals and activities. Attendees at this seminar came from various parts of Dar es Salaam. These included waste pickers (both members and leaders) from Ubungo Municipality, a municipal representative (Environmental Management Officer), the Street Chairperson for the National Housing Corporation (NHC) within Ubungo ward, the MTAWADA secretariat, the facilitator, and journalists from Mwanahalisi TV, UWAWAMA ONLINE TV, and Watetezi TV.",
             date: "September 21, 2025",
             location: "Manzese-Ubungo",
             category: "education"

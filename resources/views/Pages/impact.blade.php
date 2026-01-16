@@ -102,8 +102,8 @@
 
             <div class="project-footer" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px;">
                 <div style="display: flex; align-items: center; gap: 15px;">
-                    <div style="width: 60px; height: 60px; background: white; border-radius: 12px; display: flex; align-items: center; justify-content: center; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);">
-                        <i class="fas fa-globe" style="font-size: 28px; color: #1B5E20;"></i>
+                    <div style="width: 150px; height: 150px; background: white; border-radius: 12px; display: flex; align-items: center; justify-content: center; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); overflow: hidden;">
+                        <img src="/images/PKN_Logo_white.jpg" alt="PKN Logo" style="width: 140px; height: 140px; object-fit: contain;">
                     </div>
                     <div>
                         <div style="font-size: 12px; color: #666666; margin-bottom: 3px;">Funded by</div>
