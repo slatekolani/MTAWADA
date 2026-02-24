@@ -37,7 +37,9 @@ Route::prefix('mtawada')->group(function () {
     Route::get('/coreValues', [App\Http\Controllers\MTAWADAController::class, 'coreValues'])->name('mtawada.coreValues');
     Route::get('/impact', [App\Http\Controllers\MTAWADAController::class, 'impact'])->name('mtawada.impact');
     Route::get('/donate', [App\Http\Controllers\MTAWADAController::class, 'donate'])->name('mtawada.donate');
+    Route::post('/donate', [App\Http\Controllers\MTAWADAController::class, 'submitDonation'])->name('mtawada.donate.submit');
     Route::get('/gallery', [App\Http\Controllers\MTAWADAController::class, 'gallery'])->name('mtawada.gallery');
     Route::get('/contact', [App\Http\Controllers\MTAWADAController::class, 'contact'])->name('mtawada.contact');
+    Route::post('/contact', [App\Http\Controllers\MTAWADAController::class, 'submitContact'])->name('mtawada.contact.submit');
     Route::get('/programs', [App\Http\Controllers\MTAWADAController::class, 'programs'])->name('mtawada.programs');
 });

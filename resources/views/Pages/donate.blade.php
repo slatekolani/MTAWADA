@@ -113,7 +113,11 @@
 
                 <!-- Donation Form -->
                 <div class="form-body" style="padding: 50px;">
-                    <form id="donationForm">
+                    <!-- Success / Error Alert -->
+                    <div id="donationAlert" style="display:none; padding: 16px 20px; border-radius: 10px; margin-bottom: 25px; font-size: 15px; font-weight: 500;"></div>
+
+                    <form id="donationForm" method="POST" action="{{ route('mtawada.donate.submit') }}">
+                        @csrf
                         <!-- Donation Amount Selection -->
                         <div class="form-section" style="margin-bottom: 40px;">
 
@@ -447,25 +451,18 @@ document.addEventListener('DOMContentLoaded', function() {
     amountBtns.forEach(btn => {
         btn.addEventListener('click', function() {
             const amount = this.getAttribute('data-amount');
-
-            // Remove active state from all buttons
             amountBtns.forEach(b => {
                 b.classList.remove('active');
                 b.style.background = 'white';
                 b.style.borderColor = '#E8F5E9';
             });
-
-            // Set active state for clicked button
             this.classList.add('active');
             this.style.background = '#E8F5E9';
             this.style.borderColor = '#1B5E20';
-
-            // Set custom amount input value
             customAmountInput.value = amount;
         });
     });
 
-    // Custom amount input - remove button selection when user types
     customAmountInput.addEventListener('input', function() {
         amountBtns.forEach(b => {
             b.classList.remove('active');
@@ -474,74 +471,87 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Dedication Toggle
-    const dedicationToggle = document.getElementById('dedication-toggle');
-    const dedicationFields = document.getElementById('dedication-fields');
-
-    dedicationToggle.addEventListener('change', function() {
-        if (this.checked) {
-            dedicationFields.style.display = 'block';
+    // Alert helper
+    const donationAlert = document.getElementById('donationAlert');
+    function showAlert(message, isSuccess) {
+        donationAlert.textContent = message;
+        donationAlert.style.display = 'block';
+        if (isSuccess) {
+            donationAlert.style.background = '#E8F5E9';
+            donationAlert.style.color = '#1B5E20';
+            donationAlert.style.border = '1px solid #A5D6A7';
         } else {
-            dedicationFields.style.display = 'none';
+            donationAlert.style.background = '#FFEBEE';
+            donationAlert.style.color = '#C62828';
+            donationAlert.style.border = '1px solid #EF9A9A';
         }
-    });
+        donationAlert.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
 
-    // Form Submission
+    // Form Submission via AJAX
     const donationForm = document.getElementById('donationForm');
+    const submitBtn = donationForm.querySelector('button[type="submit"]');
 
     donationForm.addEventListener('submit', function(e) {
         e.preventDefault();
 
-        // Get form data
         const formData = new FormData(this);
         const amount = formData.get('amount');
-        const firstName = formData.get('first_name');
-        const lastName = formData.get('last_name');
-        const email = formData.get('email');
 
-        // Simple validation
+        // Validate required fields
         let isValid = true;
-        const requiredFields = this.querySelectorAll('[required]');
-
-        requiredFields.forEach(field => {
-            if (!field.value.trim() && field.type !== 'checkbox') {
-                field.style.borderColor = '#4CAF50';
+        this.querySelectorAll('[required]').forEach(field => {
+            if (!field.value.trim()) {
+                field.style.borderColor = '#e53935';
                 isValid = false;
-            } else if (field.type === 'checkbox' && !field.checked) {
-                isValid = false;
-                alert('Please agree to the privacy policy to continue.');
             } else {
                 field.style.borderColor = '#ddd';
             }
         });
 
-        if (!amount || amount <= 0) {
-            customAmountInput.style.borderColor = '#4CAF50';
-            alert('Please enter a valid donation amount.');
+        if (!amount || parseFloat(amount) <= 0) {
+            customAmountInput.style.borderColor = '#e53935';
             isValid = false;
         }
 
-        if (isValid) {
-            // In a real implementation, you would send this to your server
-            alert(`Thank you ${firstName} ${lastName} for your generous donation of ${formData.get('currency')} ${amount}!\n\nOur team will contact you at ${email} with payment instructions within 24 hours.`);
-
-            // Reset form
-            this.reset();
-            amountBtns.forEach(b => {
-                b.classList.remove('active');
-                b.style.background = 'white';
-                b.style.borderColor = '#E8F5E9';
-            });
-            dedicationFields.style.display = 'none';
-
-            // Scroll to top
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
-        } else {
-            alert('Please fill in all required fields marked with *.');
+        if (!isValid) {
+            showAlert('Please fill in all required fields marked with *.', false);
+            return;
         }
+
+        // Disable button and show loading
+        submitBtn.disabled = true;
+        submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Submitting...';
+
+        fetch(this.action, {
+            method: 'POST',
+            headers: {
+                'X-CSRF-TOKEN': formData.get('_token'),
+                'Accept': 'application/json',
+            },
+            body: formData,
+        })
+        .then(res => res.json())
+        .then(data => {
+            if (data.success) {
+                showAlert(data.message, true);
+                donationForm.reset();
+                amountBtns.forEach(b => {
+                    b.classList.remove('active');
+                    b.style.background = 'white';
+                    b.style.borderColor = '#E8F5E9';
+                });
+            } else {
+                showAlert(data.message, false);
+            }
+        })
+        .catch(() => {
+            showAlert('A network error occurred. Please check your connection and try again.', false);
+        })
+        .finally(() => {
+            submitBtn.disabled = false;
+            submitBtn.innerHTML = '<i class="fas fa-heart"></i> Submit Donation Request';
+        });
     });
 
     // Smooth scrolling for donation CTA
@@ -550,22 +560,13 @@ document.addEventListener('DOMContentLoaded', function() {
             e.preventDefault();
             const targetId = this.getAttribute('href');
             const targetElement = document.querySelector(targetId);
-
             if (targetElement) {
-                window.scrollTo({
-                    top: targetElement.offsetTop - 100,
-                    behavior: 'smooth'
-                });
+                window.scrollTo({ top: targetElement.offsetTop - 100, behavior: 'smooth' });
             }
         });
     });
 
     // Animation on scroll for impact cards
-    const observerOptions = {
-        threshold: 0.1,
-        rootMargin: '0px 0px -50px 0px'
-    };
-
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -573,9 +574,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 entry.target.style.transform = 'translateY(0)';
             }
         });
-    }, observerOptions);
+    }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
 
-    // Observe all cards for animation
     document.querySelectorAll('.impact-card').forEach(card => {
         card.style.opacity = '0';
         card.style.transform = 'translateY(30px)';

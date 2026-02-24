@@ -3,7 +3,10 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 use App\Helpers\SEOHelper;
+use App\Mail\DonationRequestMail;
+use App\Mail\ContactMail;
 
 class MTAWADAController extends Controller
 {
@@ -199,5 +202,58 @@ class MTAWADAController extends Controller
             ]
         ];
         return view('Pages.donate', compact('seo', 'breadcrumb'));
+    }
+
+    public function submitDonation(Request $request)
+    {
+        $validated = $request->validate([
+            'amount'        => 'required|numeric|min:1',
+            'currency'      => 'required|in:TZS,USD',
+            'first_name'    => 'required|string|max:100',
+            'last_name'     => 'required|string|max:100',
+            'email'         => 'required|email|max:255',
+            'phone'         => 'required|string|max:30',
+            'country'       => 'nullable|string|max:100',
+            'donation_type' => 'required|in:one-time,monthly',
+            'comments'      => 'nullable|string|max:2000',
+        ]);
+
+        try {
+            Mail::to('info@mtawada.or.tz')->send(new DonationRequestMail($validated));
+            return response()->json([
+                'success' => true,
+                'message' => "Thank you {$validated['first_name']}! Your donation request has been received. Our team will contact you at {$validated['email']} with payment instructions within 24 hours.",
+            ]);
+        } catch (\Exception $e) {
+            return response()->json([
+                'success' => false,
+                'message' => 'Sorry, there was an error sending your request. Please try again or contact us directly at info@mtawada.or.tz.',
+            ], 500);
+        }
+    }
+
+    public function submitContact(Request $request)
+    {
+        $validated = $request->validate([
+            'first_name'   => 'required|string|max:100',
+            'last_name'    => 'required|string|max:100',
+            'email'        => 'required|email|max:255',
+            'phone'        => 'nullable|string|max:30',
+            'inquiry_type' => 'required|string|max:50',
+            'message'      => 'required|string|max:5000',
+        ]);
+
+        try {
+            Mail::to('info@mtawada.or.tz')->send(new ContactMail($validated));
+            return response()->json([
+                'success' => true,
+                'message' => "Thank you {$validated['first_name']}! Your message has been sent. We will get back to you within 24 hours.",
+            ]);
+        } catch (\Exception $e) {
+            return response()->json([
+                'success' => false,
+                'message' => 'Sorry, there was an error sending your message. Please try again or contact us directly at info@mtawada.or.tz.',
+            ], 500);
+        }
     }
 }

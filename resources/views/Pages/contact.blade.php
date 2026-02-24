@@ -168,20 +168,24 @@
                         </p>
                     </div>
 
-                    <form id="contactForm" style="display: grid; gap: 20px;">
+                    <!-- Success / Error Alert -->
+                    <div id="contactAlert" style="display:none; padding: 16px 20px; border-radius: 10px; margin-bottom: 20px; font-size: 15px; font-weight: 500;"></div>
+
+                    <form id="contactForm" method="POST" action="{{ route('mtawada.contact.submit') }}" style="display: grid; gap: 20px;">
+                        @csrf
                         <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
                             <div class="form-group">
                                 <label style="display: block; color: #1B5E20; font-weight: 600; margin-bottom: 8px; font-size: 14px;">
                                     First Name <span style="color: #4CAF50;">*</span>
                                 </label>
-                                <input type="text" required style="width: 100%; padding: 12px 15px; border: 2px solid #ddd; border-radius: 10px; font-size: 16px; transition: all 0.3s; outline: none;">
+                                <input type="text" name="first_name" required style="width: 100%; padding: 12px 15px; border: 2px solid #ddd; border-radius: 10px; font-size: 16px; transition: all 0.3s; outline: none;">
                             </div>
 
                             <div class="form-group">
                                 <label style="display: block; color: #1B5E20; font-weight: 600; margin-bottom: 8px; font-size: 14px;">
                                     Last Name <span style="color: #4CAF50;">*</span>
                                 </label>
-                                <input type="text" required style="width: 100%; padding: 12px 15px; border: 2px solid #ddd; border-radius: 10px; font-size: 16px; transition: all 0.3s; outline: none;">
+                                <input type="text" name="last_name" required style="width: 100%; padding: 12px 15px; border: 2px solid #ddd; border-radius: 10px; font-size: 16px; transition: all 0.3s; outline: none;">
                             </div>
                         </div>
 
@@ -189,21 +193,21 @@
                             <label style="display: block; color: #1B5E20; font-weight: 600; margin-bottom: 8px; font-size: 14px;">
                                 Email Address <span style="color: #4CAF50;">*</span>
                             </label>
-                            <input type="email" required style="width: 100%; padding: 12px 15px; border: 2px solid #ddd; border-radius: 10px; font-size: 16px; transition: all 0.3s; outline: none;">
+                            <input type="email" name="email" required style="width: 100%; padding: 12px 15px; border: 2px solid #ddd; border-radius: 10px; font-size: 16px; transition: all 0.3s; outline: none;">
                         </div>
 
                         <div class="form-group">
                             <label style="display: block; color: #1B5E20; font-weight: 600; margin-bottom: 8px; font-size: 14px;">
                                 Phone Number
                             </label>
-                            <input type="tel" style="width: 100%; padding: 12px 15px; border: 2px solid #ddd; border-radius: 10px; font-size: 16px; transition: all 0.3s; outline: none;">
+                            <input type="tel" name="phone" style="width: 100%; padding: 12px 15px; border: 2px solid #ddd; border-radius: 10px; font-size: 16px; transition: all 0.3s; outline: none;">
                         </div>
 
                         <div class="form-group">
                             <label style="display: block; color: #1B5E20; font-weight: 600; margin-bottom: 8px; font-size: 14px;">
                                 Inquiry Type <span style="color: #4CAF50;">*</span>
                             </label>
-                            <select required style="width: 100%; padding: 12px 15px; border: 2px solid #ddd; border-radius: 10px; font-size: 16px; transition: all 0.3s; outline: none; background: white;">
+                            <select name="inquiry_type" required style="width: 100%; padding: 12px 15px; border: 2px solid #ddd; border-radius: 10px; font-size: 16px; transition: all 0.3s; outline: none; background: white;">
                                 <option value="">Select inquiry type</option>
                                 <option value="partnership">Partnership Inquiry</option>
                                 <option value="membership">Membership Inquiry</option>
@@ -219,12 +223,10 @@
                             <label style="display: block; color: #1B5E20; font-weight: 600; margin-bottom: 8px; font-size: 14px;">
                                 Message <span style="color: #4CAF50;">*</span>
                             </label>
-                            <textarea required rows="6" style="width: 100%; padding: 12px 15px; border: 2px solid #ddd; border-radius: 10px; font-size: 16px; transition: all 0.3s; outline: none; resize: vertical;"></textarea>
+                            <textarea name="message" required rows="6" style="width: 100%; padding: 12px 15px; border: 2px solid #ddd; border-radius: 10px; font-size: 16px; transition: all 0.3s; outline: none; resize: vertical;"></textarea>
                         </div>
 
-
-
-                        <button type="submit" style="background: #1B5E20; color: white; padding: 15px 30px; border: none; border-radius: 10px; font-size: 16px; font-weight: 600; cursor: pointer; transition: all 0.3s; display: flex; align-items: center; justify-content: center; gap: 10px;">
+                        <button type="submit" id="contactSubmitBtn" style="background: #1B5E20; color: white; padding: 15px 30px; border: none; border-radius: 10px; font-size: 16px; font-weight: 600; cursor: pointer; transition: all 0.3s; display: flex; align-items: center; justify-content: center; gap: 10px;">
                             <i class="fas fa-paper-plane"></i> Send Message
                         </button>
                     </form>
@@ -736,54 +738,85 @@
 
 <script>
     document.addEventListener('DOMContentLoaded', function() {
-        // Form submission
+        // Contact form submission via AJAX
         const contactForm = document.getElementById('contactForm');
         if (contactForm) {
+            const contactAlert = document.getElementById('contactAlert');
+            const contactSubmitBtn = document.getElementById('contactSubmitBtn');
+
+            function showContactAlert(message, isSuccess) {
+                contactAlert.textContent = message;
+                contactAlert.style.display = 'block';
+                if (isSuccess) {
+                    contactAlert.style.background = '#E8F5E9';
+                    contactAlert.style.color = '#1B5E20';
+                    contactAlert.style.border = '1px solid #A5D6A7';
+                } else {
+                    contactAlert.style.background = '#FFEBEE';
+                    contactAlert.style.color = '#C62828';
+                    contactAlert.style.border = '1px solid #EF9A9A';
+                }
+                contactAlert.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            }
+
             contactForm.addEventListener('submit', function(e) {
                 e.preventDefault();
 
-                // Get form data
                 const formData = new FormData(this);
-                const inquiryType = this.querySelector('select').value;
-
-                // Simple validation
                 let isValid = true;
-                const requiredFields = this.querySelectorAll('[required]');
-                requiredFields.forEach(field => {
+
+                this.querySelectorAll('[required]').forEach(field => {
                     if (!field.value.trim()) {
-                        field.style.borderColor = '#4CAF50';
+                        field.style.borderColor = '#e53935';
                         isValid = false;
                     } else {
                         field.style.borderColor = '#ddd';
                     }
                 });
 
-                if (isValid) {
-                    // In a real implementation, you would send this to your server
-                    alert('Thank you for your message! We will get back to you within 24 hours.');
-                    this.reset();
-
-                    // Scroll to thank you message (simulated)
-                    window.scrollTo({
-                        top: 0,
-                        behavior: 'smooth'
-                    });
-                } else {
-                    alert('Please fill in all required fields marked with *.');
+                if (!isValid) {
+                    showContactAlert('Please fill in all required fields marked with *.', false);
+                    return;
                 }
+
+                contactSubmitBtn.disabled = true;
+                contactSubmitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+
+                fetch(this.action, {
+                    method: 'POST',
+                    headers: {
+                        'X-CSRF-TOKEN': formData.get('_token'),
+                        'Accept': 'application/json',
+                    },
+                    body: formData,
+                })
+                .then(res => res.json())
+                .then(data => {
+                    if (data.success) {
+                        showContactAlert(data.message, true);
+                        contactForm.reset();
+                    } else {
+                        showContactAlert(data.message, false);
+                    }
+                })
+                .catch(() => {
+                    showContactAlert('A network error occurred. Please check your connection and try again.', false);
+                })
+                .finally(() => {
+                    contactSubmitBtn.disabled = false;
+                    contactSubmitBtn.innerHTML = '<i class="fas fa-paper-plane"></i> Send Message';
+                });
             });
 
             // Input focus effects
-            const inputs = contactForm.querySelectorAll('input, textarea, select');
-            inputs.forEach(input => {
+            contactForm.querySelectorAll('input, textarea, select').forEach(input => {
                 input.addEventListener('focus', function() {
                     this.style.borderColor = '#1B5E20';
                     this.style.boxShadow = '0 0 0 3px rgba(27, 94, 32, 0.1)';
                 });
-
                 input.addEventListener('blur', function() {
                     if (!this.value && this.hasAttribute('required')) {
-                        this.style.borderColor = '#4CAF50';
+                        this.style.borderColor = '#e53935';
                     } else {
                         this.style.borderColor = '#ddd';
                     }
@@ -846,18 +879,6 @@
 
             card.addEventListener('mouseleave', function() {
                 this.style.transform = 'translateY(0)';
-            });
-        });
-
-        // Phone number formatting (optional)
-        const phoneInputs = document.querySelectorAll('input[type="tel"]');
-        phoneInputs.forEach(input => {
-            input.addEventListener('input', function() {
-                let value = this.value.replace(/\D/g, '');
-                if (value.length > 0) {
-                    value = '+255 ' + value.substring(0, 3) + ' ' + value.substring(3, 6) + ' ' + value.substring(6, 9);
-                }
-                this.value = value;
             });
         });
 
